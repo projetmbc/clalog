@@ -1,7 +1,7 @@
-The `Python` module `parsuc`
-===========================
+The `Python` module `sch2`
+==========================
 
-About `parsuc`
--------------
+About `sch2`
+------------
 
-In an ideal world, all scientific content would be written using a tagging language such as `LaTeX` or [`AsciiMath`](https://asciimath.org/). Unfortunately, the real world forces us to analyze texts typed in `ASCII` style outside any rule of good sitting. This project is an attempt to analyze such exotic but common content.
+The name `sch2` comes from "**SCH**.olar **SCH**.edule": this project offers tools for efficiently writing a school schedule day by day.
