@@ -1,2 +1,2 @@
-The `Python` module `parsuc`
-===========================
+The `Python` module `sch2`
+==========================
