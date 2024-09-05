@@ -1,6 +1,6 @@
 general:
   desc   : This project offers tools for efficiently writing
-            a school schedule day by day.
+           a school schedule day by day.
   acronym: "[SCH]olar [SCH]edule"
   author : Christophe BAL
   licence: gnu 3
