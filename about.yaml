@@ -1,0 +1,9 @@
+general:
+  desc   : "???"
+  acronym: "[SCH]olar [SCH]edule"
+  author : Christophe BAL
+  licence: gnu 3
+  lang   :
+    - doc: fr
+  require:
+    - python
