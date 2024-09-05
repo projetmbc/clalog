@@ -11,17 +11,17 @@
 
 # You can use as many group abbreviations as you like, without any
 # repetition.
-ONE_GRP_ABREV:
+ONE_GRP_ABBREV:
   - folder*: one relative path of a folder containing materials for
-            one new chapter.
-            The key ''folder'' is only useful when starting or changing
-            a chapter is tarted.
+             one new chapter.
+             The key ''folder'' is only useful when starting or changing
+             a chapter is tarted.
 
 #: if STATUS in [done, cor] :#
   - STATUS*:
     - info*: one verbatim content
 
-#: if KIND in [act, ex] :#
+#: if KIND in [act, ex, tp] :#
     - KIND* : c1p277
               OR
               1p277
@@ -37,7 +37,8 @@ ONE_GRP_ABREV:
   - todo:
 #: if DATE == next or isdate(DATE) :#
     - DATE:
-#: if KIND in [info, act, ex] :#
+#: if KIND in [info, act, ex, tp] :#
       - KIND* : see ???
+
       - read  : one verbatim content
                 (verbatim comments)
