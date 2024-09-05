@@ -1,0 +1,43 @@
+﻿# NOTES.
+#     1) Names followed by one star indicates an optional setting.
+#     2) Special comments ''#: ... :#'' allow to use one small DSL
+#        to indicate some constraints in the specifications but not
+#        the YAML file that will be used.
+
+
+# ============= #
+# == ONE DAY == #
+# ============= #
+
+# You can use as many group abbreviations as you like, without any
+# repetition.
+ONE_GRP_ABREV:
+  - folder*: one relative path of a folder containing materials for
+            one new chapter.
+            The key ''folder'' is only useful when starting or changing
+            a chapter is tarted.
+
+#: if STATUS in [done, cor] :#
+  - STATUS*:
+    - info*: one verbatim content
+
+#: if KIND in [act, ex] :#
+    - KIND* : c1p277
+              OR
+              1p277
+              OR
+              1 or c1
+              OR
+              verbatim content
+              (verbatim comments for each possible cases)
+
+    - lesson*: I .. II-2
+               (verbatim comments)
+
+  - todo:
+#: if DATE == next or isdate(DATE) :#
+    - DATE:
+#: if KIND in [info, act, ex] :#
+      - KIND* : see ???
+      - read  : one verbatim content
+                (verbatim comments)
