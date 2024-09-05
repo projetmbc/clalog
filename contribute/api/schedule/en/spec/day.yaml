@@ -5,12 +5,11 @@
 #        the YAML file that will be used.
 
 
-# ============= #
-# == ONE DAY == #
-# ============= #
+# ============================= #
+# == ONE DAY, SEVERAL GROUPS == #
+# ============================= #
 
-# You can use as many group abbreviations as you like, without any
-# repetition.
+# You can use as many single group names as you like.
 ONE_GRP_ABBREV:
   - folder*: one relative path of a folder containing materials for
              one new chapter.
@@ -24,7 +23,7 @@ ONE_GRP_ABBREV:
 #: if KIND in [act, ex, tp] :#
     - KIND* : c1p277
               OR
-              1p277
+              1p277   numerotation auto en lien avec chapitre
               OR
               1 or c1
               OR

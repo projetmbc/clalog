@@ -3,8 +3,11 @@ general:
            a school schedule day by day.
   acronym: "[SCH]olar [SCH]edule"
   author : Christophe BAL
+
   licence: gnu 3
-  lang   :
+
+  lang:
     - doc: fr
+
   require:
     - python
