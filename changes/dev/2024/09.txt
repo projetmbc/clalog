@@ -5,4 +5,4 @@
 05  (0.0.0-alpha.0)
 ==
 
-Starting this project to write a school schedule day by day.
+Starting this project offering tools to write a school schedule day by day.
