@@ -9,35 +9,16 @@
 # == ONE DAY, SEVERAL GROUPS == #
 # ============================= #
 
-# You can use as many single group names as you like.
-ONE_GRP_ABBREV:
-  - folder*: one relative path of a folder containing materials for
-             one new chapter.
-             The key ''folder'' is only useful when starting or changing
-             a chapter is tarted.
-
-#: if STATUS in [done, cor] :#
-  - STATUS*:
-    - info*: one verbatim content
-
-#: if KIND in [act, ex, tp] :#
-    - KIND* : c1p277
-              OR
-              1p277   numerotation auto en lien avec chapitre
-              OR
-              1 or c1
-              OR
-              verbatim content
-              (verbatim comments for each possible cases)
-
-    - lesson*: I .. II-2
-               (verbatim comments)
+# The user can use as many group names as required.
+ONE_USER_GRP_ABBREV:
+#: if CONTEXT in [cor, done] :#
+  - CONTEXT*:
+    - Information is given point by point, with the option of using
+      a dedicated DSL to automate the classic use case.
+    - ...
 
   - todo:
 #: if DATE == next or isdate(DATE) :#
     - DATE:
-#: if KIND in [info, act, ex, tp] :#
-      - KIND* : see ???
-
-      - read  : one verbatim content
-                (verbatim comments)
+      - The specifications are identical to those for the ''cor'' and
+        ''done'' contexts.
