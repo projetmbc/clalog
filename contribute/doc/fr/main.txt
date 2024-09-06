@@ -1,0 +1,20 @@
+﻿this::
+    title  = Rédiger son cahier de texte scolaire
+    author = Christophe, BAL [projetmbc@gmail.com]
+    lang   = fr
+
+    licence = by nc sa 4.0
+    out     = html, pdf
+
+    lexic   = python
+
+
+abrev::
+    thisproj = cf::''sch2 ;
+                     https://github.com/projetmbc/sch2.git''
+
+    content = content
+
+
+content::
+    \content/intro.txt

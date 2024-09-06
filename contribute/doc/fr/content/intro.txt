@@ -1,0 +1,9 @@
+﻿this::
+    date = 2024-09-06
+
+
+===========================
+À qui s'adresse \thisproj ?
+===========================
+
+La rédaction d'un cahier de texte numérique est une tâche ingrate et très répétitive. C'est pour améliorer cette \exp que \thisproj a été créé.

@@ -2,6 +2,21 @@
 
 
 ==
+06  (0.0.0-alpha.1)
+==
+
+-----
+:new:
+-----
+
+[[:api:]]
+\yaml \specs: simple day \infos \struct.
+
+
+// ---------- //
+
+
+==
 05  (0.0.0-alpha.0)
 ==
 
