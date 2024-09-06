@@ -13,6 +13,10 @@
 \yaml \specs: simple day \infos \struct.
 
 
+[[:doc:]]
+\doc before code: \1st basic version of the \intro.
+
+
 // ---------- //
 
 
