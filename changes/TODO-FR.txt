@@ -3,6 +3,17 @@ sch2 - TODO
 ====
 
 
+
+// ---------- //
+
+latex support
+
+    --> pack
+          + lesson.sch2.toc : cf config de mes cours!!
+
+    --> class: mef PDF
+
+
 // ---------- //
 
 backtick

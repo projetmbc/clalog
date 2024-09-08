@@ -36,7 +36,7 @@ La rédaction d'un cahier de texte numérique scolaire est une tâche répétiti
 
 
 caution::
-    L'usage de fichiers \techs rédigés via un simple éditeur de texte, et non un éditeur de \docus, restera la norme par souci d'efficacité, et d'usgae nomade ; il n'y aura donc pas de \dev d'une interface graphique par l'auteur de \thisproj.
+    L'usage de fichiers \techs rédigés via un simple éditeur de texte, et non un éditeur de \docus, restera la norme par souci d'efficacité, et d'usage nomade : l'auteur de \thisproj ne développera donc pas d'une interface graphique.
 
 
 note::
