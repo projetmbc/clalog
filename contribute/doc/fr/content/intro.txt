@@ -1,9 +1,43 @@
 ﻿this::
-    date = 2024-09-06
+    date = 2024-09-08               ??
 
 
 ===========================
 À qui s'adresse \thisproj ?
 ===========================
 
-La rédaction d'un cahier de texte numérique est une tâche ingrate et très répétitive. C'est pour améliorer cette \exp que \thisproj a été créé.
+La rédaction d'un cahier de texte numérique scolaire est une tâche répétitive. C'est pour améliorer cette \exp que \thisproj a été créé. Voici les fonctionnalités proposées.
+
+    1) **Gestion des \exs des manuels utilisés.**
+
+        * On peut demander, pour un chapitre donné, tous les exercices proposés, et aussi vérifier qu'ils ont bien été corrigés.
+
+        * XXX
+
+    1) **XXX.**
+
+        * XXX
+
+    1) **XXX.**
+
+        * XXX
+
+    1) **XXX.**
+
+        * XXX
+
+    1) **XXX.**
+
+        * XXX
+
+
+
+
+
+
+caution::
+    L'usage de fichiers \techs rédigés via un simple éditeur de texte, et non un éditeur de \docus, restera la norme par souci d'efficacité, et d'usgae nomade ; il n'y aura donc pas de \dev d'une interface graphique par l'auteur de \thisproj.
+
+
+note::
+    Le concepteur de \thisproj étant enseignant en \maths, il a en tête des contenus de type scientifique. Toutefois, le code est assez souple pour répondre à d'autres demandes **amicalement** sugérées.

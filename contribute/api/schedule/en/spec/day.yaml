@@ -10,15 +10,17 @@
 # ============================= #
 
 # The user can use as many group names as required.
+#
+#: assert isID(ONE_USER_GRP_ABBREV) :#
 ONE_USER_GRP_ABBREV:
 #: if CONTEXT in [cor, done] :#
   - CONTEXT*:
     - Information is given point by point, with the option of using
-      a dedicated DSL to automate the classic use case.
+      a dedicated DSL to automate classic use cases and extract
+      some important data.
     - ...
 
   - todo:
-#: if DATE == next or isdate(DATE) :#
+#: elif DATE == next or isdate(DATE) :#
     - DATE:
-      - The specifications are identical to those for the ''cor'' and
-        ''done'' contexts.
+      - See the specifications for the ''cor'' context.
