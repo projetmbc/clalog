@@ -2,15 +2,15 @@
 
 
 ==
-XX  ??
+10
 ==
 
 --------
-:uodate:
+:update:
 --------
 
-[[:doc:]]  ??
-\doc before code: a less basic \intro has been written.
+[[:doc:]]
+\Doc before code: a less basic \intro has been written.
 
 
 // ---------- //
@@ -29,7 +29,7 @@ XX  ??
 
 
 [[:doc:]]
-\doc before code: \1st basic version of the \intro.
+\Doc before code: \1st basic version of the \intro.
 
 
 // ---------- //

@@ -1,5 +1,5 @@
 ﻿this::
-    title  = Rédiger son cahier de texte scolaire
+    title  = Rédiger un cahier de texte scolaire
     author = Christophe, BAL [projetmbc@gmail.com]
     lang   = fr
 

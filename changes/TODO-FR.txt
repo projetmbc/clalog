@@ -6,6 +6,23 @@ sch2 - TODO
 
 // ---------- //
 
+manual:
+    - tutre 1   --> par dféaut
+    - tutre 2
+
+
+puis on a \manual 1 our changer le manuel par défaut ou sinon 1p5m1pour usage local
+
+
+// ---------- //
+
+    - Similar info 1 ;
+      Similar info 2 ;
+      Similar info 3 ; ...
+
+
+// ---------- //
+
 latex support
 
     --> pack

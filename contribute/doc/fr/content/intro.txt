@@ -1,42 +1,34 @@
 ﻿this::
-    date = 2024-09-08               ??
+    date = 2024-09-10
 
 
 ===========================
 À qui s'adresse \thisproj ?
 ===========================
 
-La rédaction d'un cahier de texte numérique scolaire est une tâche répétitive. C'est pour améliorer cette \exp que \thisproj a été créé. Voici les fonctionnalités proposées.
+\thisproj fournit des outils de \redac d'un cahier de texte numérique scolaire. Voici quelques fonctionnalités proposées.
+
+    1) **\Redac minimaliste :** un langage spécifique permet de limiter certaines saisies. Par exemple, on tape yaml::''\ex 12p34 .. 56p78'', puis on récupère le texte "exercices 12 page 34 à 56 page 78", tandis qeu yaml::''\ex 12p34 .. 13p35'' fournit "exercices 12 page 34 et 13 page 35".
 
     1) **Gestion des \exs des manuels utilisés.**
 
-        * On peut demander, pour un chapitre donné, tous les exercices proposés, et aussi vérifier qu'ils ont bien été corrigés.
+        * \Redac partielle de certaines numérotations via une gestion efficace des numéros de page.
 
-        * XXX
+        * Liste des \exs proposés avec leur status de correction ou non.
 
-    1) **XXX.**
+        * Prise en charge de différents manuels.
 
-        * XXX
+    1) **Sommaire d'un cours tapé via \latex :** \refs aux sections du cours juste via leur numérotation.
 
-    1) **XXX.**
+    1) **Progression du travail.**
 
-        * XXX
+        * Possibilité d'indiquer une progression, et de comparer en \tps réel l'avancement effectif avec celui théorique.
 
-    1) **XXX.**
-
-        * XXX
-
-    1) **XXX.**
-
-        * XXX
-
-
-
-
+        * Fabrication de la progression a posteriori.
 
 
 caution::
-    L'usage de fichiers \techs rédigés via un simple éditeur de texte, et non un éditeur de \docus, restera la norme par souci d'efficacité, et d'usage nomade : l'auteur de \thisproj ne développera donc pas d'une interface graphique.
+    L'usage de fichiers \techs rédigés via un simple éditeur de texte, et non un éditeur de \docus, restera la norme par souci d'efficacité, et pour permettre un usage nomade : l'auteur de \thisproj ne développera donc pas d'interfaces graphiques, ni même de site internet.
 
 
 note::
