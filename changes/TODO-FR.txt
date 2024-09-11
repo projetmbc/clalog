@@ -1,6 +1,6 @@
-====
-sch2 - TODO
-====
+======
+clalog - TODO
+======
 
 
 
@@ -13,6 +13,13 @@ manual:
 group et non abrev car abrev vraiment pour abrev
 
 puis on a \manual 1 our changer le manuel par défaut ou sinon 1p5m1pour usage local
+
+
+// ---------- //
+
+mai aca ==> vacacnces author
+
+    --> faire cli qui permet d'initier son cdt acvec cette option
 
 
 // ---------- //

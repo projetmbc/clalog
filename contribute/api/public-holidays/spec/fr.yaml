@@ -1,0 +1,24 @@
+﻿# This file gives the public holidays in France.
+#
+# Source.
+#     * https://fr.wikipedia.org/wiki/F%C3%AAtes_et_jours_f%C3%A9ri%C3%A9s_en_France
+
+static:
+  01-01: "jour de l'an"
+
+  05-01: "fête du travail"
+  05-08: "victoire 1945"
+
+  07-14: "fête nationale"
+
+  08-15: "assomption"
+
+  11-01: "fête de la Toussaint"
+  11-11: "armistice 1918"
+
+  12-25: "Noël"
+
+dynamic:
+  - "lundi de Pâques"
+  - "jeudi de l'Ascension"
+  - "lundi de Pentecôte"

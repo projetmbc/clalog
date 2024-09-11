@@ -10,8 +10,8 @@
 
 
 abrev::
-    thisproj = cf::''sch2 ;
-                     https://github.com/projetmbc/sch2.git''
+    thisproj = cf::''classlog ;
+                     https://github.com/projetmbc/classlog.git''
 
     content = content
 

@@ -1,0 +1,13 @@
+﻿this::
+    date = 2024-09-12
+
+
+================================
+yaml::''group'' pour les classes
+================================
+
+Les \grps d'élèves s'indiquent via un nom court pour la saisie d'\infos liés au \cdt, et d'un texte long qui sera utilisé pour la version des \infos à publier. Deux choses sont à retenir.
+
+    1) yaml::''2G : 2GT2'' définit un groupe entier. Ici l'absence d'un tiret dans le nom court yaml::''2G'' indique que l'on définit une classe toute entière.
+
+    1) yaml::''2G-1 : \2G - Groupe 1'' définit un \ss-\grpe avec dans le nom long l'utilisation de yaml::''\2G'' comme abréviation de "2GT2".Ici la présence d'un tiret dans le nom court yaml::''2G-1'' indique que l'on définit une partie d'une classe.

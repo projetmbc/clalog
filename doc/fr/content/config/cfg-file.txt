@@ -1,0 +1,13 @@
+﻿this::
+    date = 2024-09-11
+
+
+======================
+Où s'indique la \cfg ?
+======================
+
+La \cfg du \cdt se fait via un fichier path::''cfg.yaml'' placé dans le dossier destiné au \cdt. Dans la suite, nous considérons la \struct de dossier initiale suivante.
+
+dirtree::
+    + mon-cdt
+        * cfg.yaml

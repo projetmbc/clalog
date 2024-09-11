@@ -1,0 +1,24 @@
+﻿this::
+    date = 2024-09-11
+
+
+abrev::
+    content = :this.name:
+
+
+======================
+Un exemple minimaliste
+======================
+
+Coonsidérons la \cfg très courte ci-après que nous allons étudier suivant les trois blocs d'\infos yaml::''group'', yaml::''schedule'' et yaml::''date''.
+
+yaml::
+    ---
+    path = ?/examples/cfg/:this.name:.yaml
+    ---
+
+
+content::
+    \content/group.txt
+    \content/schedule.txt
+    \content/date.txt

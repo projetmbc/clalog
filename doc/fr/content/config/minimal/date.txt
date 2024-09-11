@@ -1,0 +1,9 @@
+﻿this::
+    date = 2024-09-11
+
+
+=================================================
+yaml::''date'' pour le début et la fin de l'année
+=================================================
+
+Dans le bloc yaml::''date'', les instructions yaml::''start: 2024-09-03'' et yaml::''end: 2025-07-05'' donnent les début et la fin de l'année au format anglais yaml::''AAAA-MM-JJ''.

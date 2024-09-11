@@ -94,7 +94,7 @@ schedule:
 # == PERIODS == #
 # ============= #
 
-dates:
+date:
 #: assert isdate(START_DATE, "{month}-{day}") :#
 #: assert isdate(END_DATE  , "{month}-{day}") :#
   start: START_DATE

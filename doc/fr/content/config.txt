@@ -7,8 +7,5 @@ Configurer son \cdt
 ===================
 
 content::
-    \content/XXX.txt
-    \content/XXX.txt
-    \content/XXX.txt
-    \content/XXX.txt
-    \content/XXX.txt
+    \content/cfg-file.txt
+    \content/minimal.txt
