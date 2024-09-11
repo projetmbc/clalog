@@ -13,6 +13,14 @@
 \yaml \specs: \cfg \struct.
 
 
+--------
+:update:
+--------
+
+[[:doc:]]
+\Doc before code: the \intro becomes mature.
+
+
 // ---------- //
 
 

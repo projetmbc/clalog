@@ -1,0 +1,14 @@
+﻿abrev::
+    content = :this.name:
+
+
+===================
+Configurer son \cdt
+===================
+
+content::
+    \content/XXX.txt
+    \content/XXX.txt
+    \content/XXX.txt
+    \content/XXX.txt
+    \content/XXX.txt
