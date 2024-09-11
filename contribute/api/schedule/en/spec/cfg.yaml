@@ -82,12 +82,11 @@ schedule:
 # cases regarding to the schedule.
 #
 #: assert isdate(DAY, "{day_name}") :#
-#
+  DAY*:
 #: assert isdate(START_TIME, ["{hour}h{min}", "{hour}h"]) :#
 #: assert isdate(END_TIME  , ["{hour}h{min}", "{hour}h"]) :#
 #
 #: assert WEEK_ID in dates.weeks.keys() :#
-  DAY*:
     "{START_TIME}  .. {END_TIME} [week {WEEK_ID}]": SNT
 
 
@@ -102,19 +101,17 @@ dates:
   end  : END_DATE
 
 # There is no restriction on the number of special aletrantive weeks.
-#
+  weeks*:
 #: assert isdate(START_1ST_WEEK_ID_A, "{month}-{day}") :#
 #: assert isdate(START_1ST_WEEK_ID_B, "{month}-{day}") :#
 #
 #: assert isid(ID_A) :#
 #: assert isid(ID_B) :#
-  weeks*:
     ID_A: START_1ST_WEEK_ID_A
     ID_B: START_1ST_WEEK_ID_B
 
 # There is no restriction on the number of holidays.
-#
+  holidays*:
 #: assert isdate(START_HOLIDAYS, "{month}-{day}") :#
 #: assert isdate(END_HOLIDAYS  , "{month}-{day}") :#
-  holidays*:
     "Full name of the holidays": START_HOLIDAYS .. END_HOLIDAYS
