@@ -2,14 +2,14 @@
 
 
 ==
-11  ????  (0.0.0-alpha.2)
+11  (0.0.0-alpha.2)
 ==
 
 -----
 :new:
 -----
 
-[[:api:]]  ????
+[[:api:]]
 \yaml \specs: \cfg \struct.
 
 
