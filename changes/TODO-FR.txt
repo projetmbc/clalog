@@ -10,6 +10,7 @@ manual:
     - tutre 1   --> par dféaut
     - tutre 2
 
+group et non abrev car abrev vraiment pour abrev
 
 puis on a \manual 1 our changer le manuel par défaut ou sinon 1p5m1pour usage local
 

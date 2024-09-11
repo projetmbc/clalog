@@ -1,8 +1,7 @@
 ﻿# NOTES.
 #     1) Names followed by one star indicates an optional setting.
 #     2) Special comments ''#: ... :#'' allow to use one small DSL
-#        to indicate some constraints in the specifications but not
-#        the YAML file that will be used.
+#        to indicate some constraints in the specifications.
 
 
 # ============================= #
@@ -10,10 +9,11 @@
 # ============================= #
 
 # The user can use as many group names as required.
-#
-#: assert isID(ONE_USER_GRP_ABBREV) :#
-ONE_USER_GRP_ABBREV:
-#: if CONTEXT in [cor, done] :#
+
+#: assert MAIN_GRP_NAME in ./cfg.yaml->group.keys() :#
+
+MAIN_GRP_NAME:
+#: assert CONTEXT in ["cor", "done"] :#
   - CONTEXT*:
     - Information is given point by point, with the option of using
       a dedicated DSL to automate classic use cases and extract
@@ -21,6 +21,6 @@ ONE_USER_GRP_ABBREV:
     - ...
 
   - todo:
-#: elif DATE == next or isdate(DATE) :#
+#: assert DATE == "next" or isdate(DATE, "{month}-{day}") :#
     - DATE:
       - See the specifications for the ''cor'' context.
