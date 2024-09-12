@@ -10,7 +10,7 @@ Dans le code suivant se trouvent \ttes les \infos optionnelles utilisables dans 
 
 yaml::
     ---
-    path = ?/examples/cfg/full/:this.Nom:.yaml
+    path = ?/examples/cfg/full/:this.name:.yaml
     ---
 
 
