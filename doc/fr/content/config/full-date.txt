@@ -1,0 +1,21 @@
+﻿this::
+    date = 2024-09-13
+
+
+==============================
+yaml::''date'' pour tout dater
+==============================
+
+Voici un \ens complet de dates correspondant à l'année scolaire française de date::''2024'' à date::''2025''.
+
+yaml::
+    ---
+    path = ?/examples/cfg/full/:this.name:.yaml
+    ---
+
+
+Dans cf::''/minimal/date.txt'', nous avons expliqué l'emploi de yaml::''start'' et yaml::''end'' pour ciconscrire l'année scolaire. Parlons donc des blocs bien nommés yaml::''weeks'' et yaml::''holidays''.
+
+    1) yaml::''weeks'' permet, si besoin, de travailler avec des semaines alternées, soit ici des semaines A et B.
+
+    1) yaml::''holidays'' sert à indiquer des vacanaces en les nommant puis en les datant.

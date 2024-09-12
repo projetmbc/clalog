@@ -20,7 +20,7 @@ MAIN_GRP_NAME:
       some important data.
     - ...
 
-  - todo:
+  - todo*:
 #: assert DATE == "next" or isdate(DATE, "{month}-{day}") :#
     - DATE:
       - See the specifications for the ''cor'' context.

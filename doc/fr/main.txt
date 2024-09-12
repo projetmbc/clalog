@@ -10,12 +10,13 @@
 
 
 abrev::
-    thisproj = cf::''classlog ;
-                     https://github.com/projetmbc/classlog.git''
+    thisproj = cf::''dclog ;
+                     https://github.com/projetmbc/dclog.git''
 
     content = content
 
 
 content::
     \content/intro.txt
-    \content/config.txt     ??
+    \content/config.txt
+    \content/day-by-day.txt         ??

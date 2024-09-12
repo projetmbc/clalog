@@ -2,16 +2,13 @@
     date = 2024-09-12
 
 
-=========================================
-yaml::''XXX'' pour YYY
-=========================================
+=================================
+yaml::''abbrev'' pour des \abrevs
+=================================
 
-XXX
+Le code ci-après montre commment définir des yaml::''ABREVIATIONS'' que l'on pourra utiliser via yaml::''\ABREVIATIONS'' comme dans la \def de appli qui associe "Mathématiques et Physique appliquées" à yaml::''\applis''.
 
 yaml::
     ---
     path = ?/examples/cfg/full/:this.name:.yaml
     ---
-
-
-????

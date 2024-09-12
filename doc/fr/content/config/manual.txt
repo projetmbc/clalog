@@ -1,12 +1,12 @@
 ﻿this::
-    date = 2024-09-12
+    date = 2024-09-13
 
 
-=========================================
-yaml::''XXX'' pour YYY
-=========================================
+====================================================
+yaml::''manual'' pour les manuels scolaires utilisés
+====================================================
 
-XXX
+Pour chaque \grp indiqué dans le bloc yaml::''group'', on peut indiquer une liste de titres de manuels. Ci-après, on indique juste les manuels "Math'x 2019" et "Barbazo 2019" pour les \grps de noms courts yaml::''2G'' et yaml::''1G'' \resp.
 
 yaml::
     ---
@@ -14,4 +14,5 @@ yaml::
     ---
 
 
-????
+caution::
+    Pour un \grp donné, l'ordre de saisie est important car le premier manuel indiqué sera celui par défaut, et une \ref à un manuel se fera via sa position dans la liste des manuels.

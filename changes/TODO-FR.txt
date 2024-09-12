@@ -34,7 +34,7 @@ mai aca ==> vacacnces author
 latex support
 
     --> pack
-          + lesson.sch2.toc : cf config de mes cours!!
+          + lesson.dclog.toc : cf config de mes cours!!
 
     --> class: mef PDF
 

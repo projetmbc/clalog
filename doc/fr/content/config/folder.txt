@@ -1,17 +1,14 @@
 ﻿this::
-    date = 2024-09-12
+    date = 2024-09-13
 
 
 =========================================
-yaml::''XXX'' pour YYY
+yaml::''folder'' pour les \docus utilisés
 =========================================
 
-XXX
+Pour chaque \grp indiqué dans le bloc yaml::''group'', il est possible de fournir un chemin vers un dossier contenant tous les \docus qui seront référencés dans le \cdt, chaque chemin de dossier devant être indiqué relativement au dossier contenant le fichier de \cfg.
 
 yaml::
     ---
     path = ?/examples/cfg/full/:this.name:.yaml
     ---
-
-
-????

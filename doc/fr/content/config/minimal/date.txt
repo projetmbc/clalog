@@ -1,5 +1,5 @@
 ﻿this::
-    date = 2024-09-12
+    date = 2024-09-13
 
 
 =========================================
@@ -15,3 +15,7 @@ yaml::
 
 
 Dans le bloc yaml::''date'', les instructions yaml::''start: 2024-09-03'' et yaml::''end: 2025-07-05'' donnent les début et la fin de l'année au format anglais yaml::''AAAA-MM-JJ''.
+
+
+caution::
+    La \spec complète du bloc yaml::''date'' est donnée dans cf::''?/full-date.txt''.

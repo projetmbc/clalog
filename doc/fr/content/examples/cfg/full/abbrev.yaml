@@ -1,12 +1,4 @@
-abrev:
-  2G   : 2GT2
-  2G-1 : \2G - Groupe 1
-  2G-2 : \2G - Groupe 2
-  2G-AP: \2G - AP
-
-  SNT  : SNT (2GT2)
-  SNT-1: \SNT - Groupe 1
-  SNT-2: \SNT - Groupe 2
-
-  1G   : 1G MATHS 5 V
-  1G-AP: \2G - AP
+abbrev:
+  maths : Mathématiques
+  phys  : Physique
+  applis: \maths et \phys appliquées

@@ -2,16 +2,28 @@
     date = 2024-09-12
 
 
-=========================================
-yaml::''XXX'' pour YYY
-=========================================
+===================================
+yaml::''gene'' pour des généralités
+===================================
 
-Le code suivant donne l'ensemble des \infos qu'il est possible de renseignger dans le bloc optionnel yaml::''gene''.
+Dans le code suivant se trouvent \ttes les \infos optionnelles utilisables dans le bloc optionnel yaml::''gene''.
 
 yaml::
     ---
-    path = ?/examples/cfg/full/:this.name:.yaml
+    path = ?/examples/cfg/full/:this.Nom:.yaml
     ---
 
 
-????
+Deux renseignements sont disponibles.
+
+    1) yaml::''institute'' indique le nom d'une institution de ratachement de l'enseignant rédigeant le \cdt.
+
+    1) yaml::''name'' permet d'identifier l'enseignant rédigeant le \cdt via l'un des formats suivants.
+
+        * yaml::''Nom''.
+
+        * yaml::''Prénom, Nom''.
+
+        * yaml::''Prénom 1, Prénom 2, Nom'' sans limite de prénoms.
+
+        * yaml::''... [un.courriel@fournisseur.fr]'' où yaml::''...'' est l'un des formats précédents.

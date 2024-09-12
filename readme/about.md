@@ -1,4 +1,4 @@
-About `sch2`
-------------
+About `dclog`
+-------------
 
-The name `sch2` comes from "**SCH**.olar **SCH**.edule": this project offers tools for efficiently writing a school schedule day by day.
+The name `dclog` comes from *"**D**aily **C**lass **LOG**"*: this project offers tools for efficiently writing a school class log day by day.

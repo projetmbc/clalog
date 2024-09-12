@@ -1,2 +1,2 @@
-The `Python` module `sch2`
-==========================
+The `Python` module `dclog`
+===========================

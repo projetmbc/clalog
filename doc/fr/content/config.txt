@@ -9,8 +9,8 @@ Configurer son \cdt
 content::
     \content/cfg-file.txt
     \content/minimal.txt
-    \content/gene.txt           ??????????
-    \content/date.txt           ????????
-    \content/folder.txt         ??????
-    \content/manual.txt         ????
-    \content/abbrev.txt         ??
+    \content/gene.txt
+    \content/full-date.txt
+    \content/folder.txt
+    \content/manual.txt
+    \content/abbrev.txt
