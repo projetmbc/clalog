@@ -6,9 +6,9 @@ abrev::
     content = :this.name:
 
 
-========================
-Ce qui doit être indiqué
-========================
+==============================
+Ce qui doit \tjrs être indiqué
+==============================
 
 Considérons la \cfg très courte suivante qui contient le \mini d'\infos à fournir. Les sections qui vont suivre vont expliquer les contenus des blocs yaml::''group'', yaml::''schedule'' et yaml::''date''.
 

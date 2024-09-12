@@ -1,0 +1,17 @@
+﻿this::
+    date = 2024-09-12
+
+
+=========================================
+yaml::''XXX'' pour YYY
+=========================================
+
+Le code suivant donne l'ensemble des \infos qu'il est possible de renseignger dans le bloc optionnel yaml::''gene''.
+
+yaml::
+    ---
+    path = ?/examples/cfg/full/:this.name:.yaml
+    ---
+
+
+????

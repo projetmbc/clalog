@@ -14,8 +14,8 @@ yaml::
     ---
 
 
-L'emploi du \tps s'indique jour par jour en utilisant les noms longs des jours en anglais. Pour un jour donné, on indique chaque période horaire sous la forme yaml::''"HEURE_DÉBUT .. HEURE_FIN" : NOM_GROUPE'' avec les contraintes suivantes.
+L'emploi du \tps s'indique jour par jour en utilisant les noms longs anglais des jours. Pour un jour donné, on indique chaque période horaire sous la forme yaml::''"HEURE_DÉBUT .. HEURE_FIN" : NOM_GROUPE'' avec les contraintes suivantes.
 
-    1) Une yaml::''HEURE'' peut avoir deux formes : soit quelque chose comme yaml::''9h05'', soit sous la forme yaml::''13h''.
+    1) Une yaml::''HEURE'' sécrit suivant deux formats : soit quelque chose comme yaml::''9h05'', soit une écriture comme yaml::''13h''.
 
     1) Un yaml::''NOM_DE_GROUPE'' correspond à l'un des noms courts donnés dans le bloc d'\infos yaml::''group''.

@@ -18,4 +18,4 @@ abrev::
 
 content::
     \content/intro.txt
-    \content/config.txt
+    \content/config.txt     ??
