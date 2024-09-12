@@ -1,20 +1,20 @@
 ﻿this::
-    date = 2024-09-11
+    date = 2024-09-12
 
 
 abrev::
     content = :this.name:
 
 
-======================
-Un exemple minimaliste
-======================
+========================
+Ce qui doit être indiqué
+========================
 
-Coonsidérons la \cfg très courte ci-après que nous allons étudier suivant les trois blocs d'\infos yaml::''group'', yaml::''schedule'' et yaml::''date''.
+Considérons la \cfg très courte suivante qui contient le \mini d'\infos à fournir. Les sections qui vont suivre vont expliquer les contenus des blocs yaml::''group'', yaml::''schedule'' et yaml::''date''.
 
 yaml::
     ---
-    path = ?/examples/cfg/:this.name:.yaml
+    path = ?/examples/cfg/minimal/full.yaml
     ---
 
 

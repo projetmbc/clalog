@@ -1,0 +1,10 @@
+schedule:
+  monday:
+    "9h05 .. 11h10" : 2G
+
+  thursday:
+    "14h50 .. 15h45" : 2G
+
+  friday:
+    "9h05 .. 10h"   : 2G-1
+    "13h  .. 13h55" : 2G-2
