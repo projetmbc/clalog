@@ -6,6 +6,10 @@ clalog - TODO
 
 // ---------- //
 
+grp1/grp2
+
+// ---------- //
+
 manual:
     - tutre 1   --> par dféaut
     - tutre 2

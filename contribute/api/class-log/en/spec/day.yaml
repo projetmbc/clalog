@@ -13,8 +13,10 @@
 #: assert MAIN_GRP_NAME in ./cfg.yaml->group.keys() :#
 
 MAIN_GRP_NAME:
-#: assert CONTEXT in ["cor", "done"] :#
-  - CONTEXT*:
+  - ctxt: Context which is typically the chapter currently covered
+
+#: assert KIND in ["cor", "done"] :#
+  - KIND*:
     - Information is given point by point, with the option of using
       a dedicated DSL to automate classic use cases and extract
       some important data.
@@ -23,4 +25,4 @@ MAIN_GRP_NAME:
   - todo*:
 #: assert DATE == "next" or isdate(DATE, "{month}-{day}") :#
     - DATE:
-      - See the specifications for the ''cor'' context.
+      - See the specifications for the ''cor'' KIND.
