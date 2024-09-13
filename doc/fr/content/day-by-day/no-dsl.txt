@@ -12,3 +12,11 @@ yaml::
     ---
     path = ?/examples/cfg/day-by-day/:this.name:.yaml
     ---
+
+
+YYY
+
+yaml::
+    ---
+    path = ?/examples/cfg/day-by-day/:this.name:-repetition.yaml
+    ---

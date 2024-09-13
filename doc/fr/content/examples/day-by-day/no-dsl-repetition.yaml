@@ -1,0 +1,17 @@
+﻿2G:
+# Un 1ier chapitre.
+  - ctxt: Chapitre A > "Découvrir dclog"
+
+  - cor:
+    - Exercice 1
+    - Exercice 2
+    - Exercice 3
+
+  - done:
+    - Parlons un peu des pseudos `mat^hs`
+
+# Un nouveau chapitre.
+  - ctxt: Chapitre B > "Maitriser dclog"
+
+  - done:
+    - La suite va parler d'un mini-langage de saisie.

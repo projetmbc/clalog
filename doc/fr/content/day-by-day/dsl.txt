@@ -1,0 +1,21 @@
+﻿this::
+    date = 2024-09-13 ??
+
+
+abrev::
+    content = :this.name:
+
+
+=========================
+Le mini-langage de saisie
+=========================
+
+YYY
+
+
+content::
+    \content/XX.txt        ??????????
+    \content/XX.txt        ????????
+    \content/XX.txt        ??????
+    \content/XX.txt        ????
+    \content/XX.txt        ??

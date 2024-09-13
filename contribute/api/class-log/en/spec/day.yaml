@@ -13,7 +13,8 @@
 #: assert MAIN_GRP_NAME in ./cfg.yaml->group.keys() :#
 
 MAIN_GRP_NAME:
-  - ctxt: Context which is typically the chapter currently covered
+  - ctxt*: To indicate a context which is typically the chapter
+           currently covered.
 
 #: assert KIND in ["cor", "done"] :#
   - KIND*:
