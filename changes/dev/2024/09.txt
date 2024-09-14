@@ -17,6 +17,21 @@
 
 
 ==
+14
+==
+
+--------
+:update:
+--------
+
+[[:api:]]
+\yaml \specs: ''out'' and ''test'' added to the day \infos \struct.
+
+
+// ---------- //
+
+
+==
 13  (0.0.0-alpha.3)
 ==
 

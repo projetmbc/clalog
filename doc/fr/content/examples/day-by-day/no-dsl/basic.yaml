@@ -1,6 +1,8 @@
 ﻿2G:
   - ctxt: Chapitre A > "Découvrir dclog"
 
+  - test: (1h) Validatuon des acquis des années précédentes
+
   - cor:
     - Un exercice.
     - Un DM.
@@ -13,12 +15,12 @@
     - Ce que l'on veut !
 
   - out:
-    - Visite du serveur de la ville oublié.
+    - Visite du serveur de la ville perdue.
 
   - todo:
     - next:
       - Pour la prochaine séance, avec les mêmes règles de saisie
-        que pour les blocs cor et done ci-dessus.
+        que pour les blocs ''cor'' et ''done'' ci-dessus.
 
     - 09-13:
       - Une date saisie en dur, des règles de rédaction inchangées.
