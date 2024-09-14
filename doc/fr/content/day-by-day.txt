@@ -1,5 +1,5 @@
 ﻿this::
-    date = 2024-09-14 ??
+    date = 2024-09-14
 
 
 abrev::
@@ -11,9 +11,11 @@ abrev::
 Saisie au jour le jour
 ======================
 
-caution::
-    ????
-    aprler via caution de la syntaxe yaml qui impose une certaine structurem^me si on ne détaillera pas tout car les exaples suffiront
+note::
+    La syntaxe retenue pour renseigner le \cdt est celle du langage \yaml. Cette \doc ne va pas présenter \ttes les subtilités liées au \lang \yaml, mais elle va juste se concentrer sur des cas concrets d'utilisation
+    ((
+        Pour les connaisseurs, les données seront toutes lues au fomat textuel afin d'éviter d'eventuelles mauvaises actions.
+    )).
 
 
 content::

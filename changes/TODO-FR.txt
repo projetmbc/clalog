@@ -6,7 +6,13 @@ clalog - TODO
 
 // ---------- //
 
+il manque explication sur rangement par année/mois/jour.yaml !!!!
+
+
+// ---------- //
+
 grp1/grp2
+
 
 // ---------- //
 

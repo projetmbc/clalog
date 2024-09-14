@@ -1,5 +1,5 @@
 ﻿this::
-    date = 2024-09-14 ??
+    date = 2024-09-15
 
 
 abrev::
@@ -11,7 +11,7 @@ abrev::
 Le mini-langage de saisie - Données reconnues par \thisproj
 ===========================================================
 
-YYY
+Un plus de \thisproj est sa capacité à extraire des \infos du contenu du \cdt. Pour ce faire, il faut utiliser un mini-langage facile à prendre en main. Ceci permet par exemple de fabriquer une progression datée des \chaps abordés avec les \DSs et les \DMs associés, d'avoir la liste des \exs proposés tout en sachant s'ils ont été corrigés ou non.
 
 
 content::

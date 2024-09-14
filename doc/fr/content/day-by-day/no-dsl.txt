@@ -1,4 +1,8 @@
-﻿abrev::
+﻿this::
+    date = 2024-09-15
+
+
+abrev::
     content  = :this.name:
     examples = \day_exas/:this.name:
 
@@ -6,6 +10,9 @@
 ====================================================
 Saisie directe - Données non reconnues par \thisproj
 ====================================================
+
+Commençons par présenter la \struct générale d'un fichier pour une journée donnée.
+
 
 content::
     \content/basic.txt        ??????????

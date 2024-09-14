@@ -15,7 +15,7 @@
 MAIN_GRP_NAME:
   - ctxt*: To indicate a context which is typically the chapter
            currently covered.
-           This ccanna be either eference to a LaTeX document
+           This can be either a reference to a LaTeX document
            or just a textual description.
 
   - test: (optional duration like 1h or 45min)
