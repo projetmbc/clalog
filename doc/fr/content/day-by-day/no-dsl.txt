@@ -1,8 +1,5 @@
-﻿this::
-    date = 2024-09-14 ??
-
-
-abrev::
+﻿abrev::
+    content  = :this.name:
     examples = \day_exas/:this.name:
 
 
@@ -10,21 +7,6 @@ abrev::
 Saisie directe - Données non reconnues par \thisproj
 ====================================================
 
-YYY
-
-yaml::
-    ---
-    path = \examples/basic.yaml
-    ---
-
-
-parelr de
-yaml::
-    - ctxt: 'Chapitre A : "Découvrir dclog"'
-
-YYY
-
-yaml::
-    ---
-    path = \examples/repeat.yaml
-    ---
+content::
+    \content/basic.txt        ??????????
+    \content/repeat.txt        ????????

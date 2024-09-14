@@ -1,0 +1,22 @@
+﻿this::
+    date = 2024-09-14 ??
+
+
+====================================================
+XXX
+====================================================
+
+YYY
+
+
+aprler via caution de la syntaxe yaml qui impose une certaine structurem^me si on ne détaillera pas tout car les exaples suffiront
+
+yaml::
+    ---
+    path = \examples/:this.name:.yaml
+    ---
+
+
+parelr de du à yaml mais au final peu pratique
+yaml::
+    - ctxt: 'Chapitre A : "Découvrir dclog"'
