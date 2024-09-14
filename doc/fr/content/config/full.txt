@@ -1,0 +1,13 @@
+﻿abrev::
+    content  = :this.name:
+    examples = \cfg_exas/:this.name:
+
+
+// Factorization of the doc source.
+
+input::
+    \content/gene.txt
+    \content/date.txt
+    \content/folder.txt
+    \content/manual.txt
+    \content/abbrev.txt

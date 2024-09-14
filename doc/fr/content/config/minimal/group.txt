@@ -10,7 +10,7 @@ Commençons par expliquer les instructions suivantes.
 
 yaml::
     ---
-    path = ?/examples/cfg/minimal/:this.name:.yaml
+    path = \examples/:this.name:.yaml
     ---
 
 

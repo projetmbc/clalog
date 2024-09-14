@@ -10,5 +10,5 @@ Pour chaque \grp indiqué dans le bloc yaml::''group'', il est possible de fourn
 
 yaml::
     ---
-    path = ?/examples/cfg/full/:this.name:.yaml
+    path = \examples/:this.name:.yaml
     ---

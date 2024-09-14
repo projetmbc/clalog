@@ -10,7 +10,7 @@ Finissons nos premières explications avec les instructions ci-après.
 
 yaml::
     ---
-    path = ?/examples/cfg/minimal/:this.name:.yaml
+    path = \examples/:this.name:.yaml
     ---
 
 
@@ -18,4 +18,4 @@ Dans le bloc yaml::''date'', les instructions yaml::''start: 2024-09-03'' et yam
 
 
 caution::
-    La \spec complète du bloc yaml::''date'' est donnée dans cf::''?/full-date.txt''.
+    La \spec complète du bloc yaml::''date'' est donnée dans cf::''?/full/date.txt''.

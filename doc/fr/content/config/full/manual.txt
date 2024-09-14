@@ -10,7 +10,7 @@ Pour chaque \grp indiqué dans le bloc yaml::''group'', on peut indiquer une lis
 
 yaml::
     ---
-    path = ?/examples/cfg/full/:this.name:.yaml
+    path = \examples/:this.name:.yaml
     ---
 
 

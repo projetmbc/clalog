@@ -1,14 +1,15 @@
 ﻿this::
-    date = 2024-09-13 ??
+    date = 2024-09-14 ??
 
 
 abrev::
-    content = :this.name:
+    content  = :this.name:
+    examples = \day_exas/:this.name:
 
 
-=========================
-Le mini-langage de saisie
-=========================
+===========================================================
+Le mini-langage de saisie - Données reconnues par \thisproj
+===========================================================
 
 YYY
 

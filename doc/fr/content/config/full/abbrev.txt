@@ -10,5 +10,5 @@ Le code ci-après montre commment définir des yaml::''ABREVIATIONS'' que l'on p
 
 yaml::
     ---
-    path = ?/examples/cfg/full/:this.name:.yaml
+    path = \examples/:this.name:.yaml
     ---

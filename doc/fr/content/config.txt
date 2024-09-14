@@ -1,5 +1,6 @@
 ﻿abrev::
-    content = :this.name:
+    content  = :this.name:
+    cfg_exas = ?/examples/:this.name:
 
 
 ===================
@@ -9,8 +10,4 @@ Configurer son \cdt
 content::
     \content/cfg-file.txt
     \content/minimal.txt
-    \content/gene.txt
-    \content/full-date.txt
-    \content/folder.txt
-    \content/manual.txt
-    \content/abbrev.txt
+    \content/full.txt

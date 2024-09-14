@@ -10,7 +10,7 @@ Voici un \ens complet de dates correspondant à l'année scolaire française de 
 
 yaml::
     ---
-    path = ?/examples/cfg/full/:this.name:.yaml
+    path = \examples/:this.name:.yaml
     ---
 
 
