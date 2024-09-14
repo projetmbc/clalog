@@ -1,4 +1,8 @@
-﻿abrev::
+﻿this::
+    date = 2024-09-14 ??
+
+
+abrev::
     content = :this.name:
     day_exas = ?/examples/:this.name:
 
@@ -6,6 +10,11 @@
 ======================
 Saisie au jour le jour
 ======================
+
+caution::
+    ????
+    aprler via caution de la syntaxe yaml qui impose une certaine structurem^me si on ne détaillera pas tout car les exaples suffiront
+
 
 content::
     \content/no-dsl.txt     ????????
