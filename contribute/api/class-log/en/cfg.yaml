@@ -62,7 +62,12 @@ abbrev*: dict(gene_id, str)
 # #: if MAIN_GRP_NAME in group.keys() :#
 #   MAIN_GRP_NAME-SUBGRP: full name of the subgroup
 ###
-group: dict(gene_id & not this.abbrev.key, str)
+group: dict(
+         gene_id & not this.abbrev.key
+         |
+         subgroup,
+         str
+       )
 
 
 # ============= #
@@ -113,9 +118,8 @@ schedule*:
 # ============= #
 
 date:
-#: "{month}-{day}") :#
-  start: date_md
-  end  : date_md
+  start: date_ymd
+  end  : date_ymd
 
 # There is no restriction on the number of special aletrantive weeks.
 # #: assert isdate(START_1ST_WEEK_ID_A, "{month}-{day}") :#
