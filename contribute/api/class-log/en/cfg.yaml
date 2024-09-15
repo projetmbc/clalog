@@ -1,0 +1,134 @@
+###
+# note::
+#     1) Names followed by one star indicates an optional setting.
+#     2) Terminal values indicates constraints for values that must
+#        be respected and coded by the fina appliacation.
+#     3) For keys, constraints always follows the schema
+#        ''KEY_UPPER_NAME |>constraint_func''.
+#     4) Documentation is done using the \tnsdoc syntax.
+###
+
+
+# =================== #
+# == GENERAL INFOS == #
+# =================== #
+
+gene*:
+###
+# Name of the author's insititute
+###
+  institute*: str
+
+###
+# NOTES.
+#     1) For the author, only the LAST NAME is mandatory.
+#     2) Several FIRST NAMES can be indicated.
+#     3) Several MAILS separated by comas can be used.
+#
+# "First Name 1 ,
+#              Last Name
+#              [auth_email_1@provider.abc]"
+###
+  author*: author
+
+
+# =================== #
+# == ABBREVIATIONS == #
+# =================== #
+
+###
+# WARNING.
+#     Abbreviations can be defined as long as they do not conflict
+#     with DSL macro commands for textbook entry, or with abbreviated
+#     group names (see below).
+#
+#   ABBREV_1: full text of the abbreviation nb.1
+#   ABBREV_2: we can use abbreviation "\ABBREV_1" in another one
+###
+abbrev*: dict(gene_id, str)
+
+
+# ============ #
+# == GROUPS == #
+# ============ #
+
+###
+# WARNING.
+#     Short names of groups must not conflict with DSL macro commands
+#     for textbook entry.
+
+#   MAIN_GRP_NAME: full name of the group
+
+# #: if MAIN_GRP_NAME in group.keys() :#
+#   MAIN_GRP_NAME-SUBGRP: full name of the subgroup
+###
+group: dict(gene_id & not this.abbrev.key, str)
+
+
+# ============= #
+# == MANUALS == #
+# ============= #
+
+###
+#: if MAIN_GRP_NAME in group.keys() :#
+  # MAIN_GRP_NAME:
+  #   - Title of the main, or single, manual used.
+  #   - You can indicate several manuals for the same group.
+###
+manual*: dict(this.group.key, list(str))
+
+
+# =============== #
+# == DOCUMENTS == #
+# =============== #
+
+###
+# #: if MAIN_GRP_NAME in group.keys() :#
+#   MAIN_GRP_NAME: relative path to the folder containing the documents
+#                  referenced in the scholar textbook, the path being
+#                  relative to the folder containing this ''cgf.yaml''.
+###
+folder*: dict(this.group.key, path_dir)
+
+
+# ============== #
+# == SCHEDULE == #
+# ============== #
+
+schedule*:
+# NOTE: the use of ''[week {WEEK_ID}]'' is only for mandotatory use
+# cases regarding to the schedule.
+#
+#: assert isdate(DAY, "{day_name}") :#
+# #: assert isdate(START_TIME, "{hour}h{min}") or isdate(START_TIME, "{hour}h"]) :#
+# #: assert isdate(END_TIME, "{hour}h{min}") or isdate(END_TIME, "{hour}h"]) :#
+# #
+# #: assert WEEK_ID in dates.weeks.keys() :#
+#     "{START_TIME}  .. {END_TIME} [week {WEEK_ID}]": SNT
+  DAY |> day_name: dict(time_week_range, this.group.key)
+
+
+# ============= #
+# == PERIODS == #
+# ============= #
+
+date:
+#: "{month}-{day}") :#
+  start: date_md
+  end  : date_md
+
+# There is no restriction on the number of special aletrantive weeks.
+# #: assert isdate(START_1ST_WEEK_ID_A, "{month}-{day}") :#
+# #: assert isdate(START_1ST_WEEK_ID_B, "{month}-{day}") :#
+# #
+# #: assert isid(ID_A) :#
+# #: assert isid(ID_B) :#
+#     ID_A: START_1ST_WEEK_ID_A
+#     ID_B: START_1ST_WEEK_ID_B
+  weeks*: dict(gene_id, date_md)
+
+# There is no restriction on the number of holidays.
+# #: assert isdate(START_HOLIDAYS, "{month}-{day}") :#
+# #: assert isdate(END_HOLIDAYS  , "{month}-{day}") :#
+#     "Full name of the holidays": START_HOLIDAYS .. END_HOLIDAYS
+  holidays*: dict(str, date_md_range)

@@ -2,7 +2,7 @@
 
 
 ==
-15    ??  (0.0.0-alpha.4)
+16    ??  (0.0.0-alpha.4)
 ==
 
 --------
@@ -11,6 +11,21 @@
 
 [[:doc:]]
 \Doc before code: full \yaml day file.
+
+
+// ---------- //
+
+
+==
+15
+==
+
+--------
+:fordev:
+--------
+
+[[:tech:]]
+\specs and \doc of \yaml files: simplifications that allow a certain degree of automation for validations.
 
 
 // ---------- //

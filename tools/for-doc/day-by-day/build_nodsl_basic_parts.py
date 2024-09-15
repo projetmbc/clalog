@@ -8,8 +8,13 @@ from yaml    import safe_load
 
 THIS_DIR = Path(__file__).parent
 
-CONTENT_DIR  = THIS_DIR.parent.parent.parent
-CONTENT_DIR  = CONTENT_DIR / "doc" / "fr" / "content" / "examples" / THIS_DIR.name / "no-dsl" / "basic"
+CONTENT_DIR = THIS_DIR
+
+while(CONTENT_DIR.name != "tools"):
+    CONTENT_DIR = CONTENT_DIR.parent
+
+CONTENT_DIR = CONTENT_DIR.parent
+CONTENT_DIR = CONTENT_DIR / "doc" / "fr" / "content" / "examples" / THIS_DIR.name / "no-dsl" / "basic"
 
 FULL_TAG  = "full"
 FULL_FILE = CONTENT_DIR / f"{FULL_TAG}.yaml"
@@ -63,9 +68,9 @@ def data_2_content(content, data, indent = '  '):
         raise ValueError(f"unsupported format:\n{data}")
 
 
-# -------------------------------------- #
-# -- ONLY KEEP THE ''full.yaml'' FILE -- #
-# -------------------------------------- #
+# ----------------------------- #
+# -- JUST KEEP ''full.yaml'' -- #
+# ----------------------------- #
 
 for p in CONTENT_DIR.glob("*.yaml"):
     if p.stem == FULL_TAG:
