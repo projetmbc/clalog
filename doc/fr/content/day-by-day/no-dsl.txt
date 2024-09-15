@@ -3,17 +3,20 @@
 
 
 abrev::
-    content  = :this.name:
-    examples = \day_exas/:this.name:
+    content   = :this.name:
+    nodsl_exa = \day_exas/:this.name:
 
 
 ====================================================
 Saisie directe - Données non reconnues par \thisproj
 ====================================================
 
-Commençons par présenter la \struct générale d'un fichier pour une journée donnée.
+Commençons par présenter la \struct générale d'un fichier pour une journée donnée
+((
+    Rappelons qu'une ligne commençant par le symbole yaml::''#'' est un commentaire non destiné à \thisproj.
+)).
 
 
 content::
-    \content/basic.txt        ??????????
-    \content/repeat.txt        ????????
+    \content/basic.txt        ?????????
+    \content/repeat.txt

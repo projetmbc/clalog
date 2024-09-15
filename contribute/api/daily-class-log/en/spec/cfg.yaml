@@ -48,7 +48,7 @@ group:
   MAIN_GRP_NAME: full name of the group
 
 #: if MAIN_GRP_NAME in group.keys() :#
-  MAIN_GRP_NAME-SUBGRP: full name of the subgroupx
+  MAIN_GRP_NAME-SUBGRP: full name of the subgroup
 
 
 # ============= #

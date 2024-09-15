@@ -1,0 +1,27 @@
+﻿# =========================== #
+# == UN EXEMPLE IRRÉALISTE == #
+# =========================== #
+
+2G:
+  - ctxt: Chapitre A > "Découvrir dclog"
+
+  - test: (1h) Validation des acquis
+
+  - cor:
+    - Exercice 1.
+    - Exercice 2.
+    - Exercice 3.
+
+  - done:
+    - Recherche et méthodologie.
+    - Parlons un peu des pseudos `mat^hs`
+
+  - out:
+    - Visite du serveur de la ville perdue.
+
+  - todo:
+    - next:
+      - Pour la prochaine séance.
+
+    - 09-15:
+      - Une date saisie en dur.

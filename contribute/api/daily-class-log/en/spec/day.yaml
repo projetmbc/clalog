@@ -18,9 +18,9 @@ MAIN_GRP_NAME:
            This can be either a reference to a LaTeX document
            or just a textual description.
 
-  - test: (optional duration like 1h or 45min)
-          Reference to a LaTeX document or just a textual
-          description.
+  - test*: (optional duration like 1h or 45min)
+           Reference to a LaTeX document or just a textual
+           description.
 
 #: assert KIND in ["cor", "done", "out"] :#
   - KIND*:

@@ -1,5 +1,5 @@
 ﻿this::
-    date = 2024-09-12
+    date = 2024-09-15
 
 
 abrev::
@@ -11,7 +11,7 @@ abrev::
 Ce qui doit \tjrs être indiqué
 ==============================
 
-Considérons la \cfg très courte suivante qui contient le \mini d'\infos à fournir. Les sections qui vont suivre vont expliquer les contenus des blocs yaml::''group'', yaml::''schedule'' et yaml::''date''.
+Considérons la \cfg très courte suivante qui contient le \mini d'\infos à fournir. Les sections qui vont suivre vont expliquer les contenus des blocs yaml::''group'', yaml::''schedule'' et yaml::''date''. Noter dès à présent l'usage de commentaires via des lignes commençant par le symbole yaml::''#''.
 
 yaml::
     ---

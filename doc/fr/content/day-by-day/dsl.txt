@@ -3,8 +3,8 @@
 
 
 abrev::
-    content  = :this.name:
-    examples = \day_exas/:this.name:
+    content = :this.name:
+    dsl_exa = \day_exas/:this.name:
 
 
 ===========================================================

@@ -1,0 +1,25 @@
+﻿this::
+    date = 2024-09-15    ???
+
+
+abrev::
+    this_yaml = \examples/:this.name:.yaml
+
+
+================
+Où sommes-nous ?
+================
+
+
+yaml::
+    ---
+    path = \this_yaml
+    ---
+
+
+Il est possible d'indiquer un \ctxt, \cad un chapitre sur lequel on travaille. Ceci se fait au moment où l'on entre dans ce contxte, pas besoin de la faire
+
+parelr de du à yaml mais au final peu pratique
+
+yaml::
+    - ctxt: 'Chapitre A : "Découvrir dclog"'

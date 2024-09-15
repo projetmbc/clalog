@@ -1,4 +1,8 @@
-﻿2G:
+﻿# ==================================== #
+# == DES RÉPÉTITIONS PARFOIS UTILES == #
+# ==================================== #
+
+2G:
 # Un 1ier chapitre.
   - ctxt: Chapitre A > "Découvrir dclog"
 
@@ -8,7 +12,7 @@
     - Exercice 3
 
   - done:
-    - Parlons un peu des pseudos `mat^hs`
+    - Résumé des notions principales.
 
 # Un nouveau chapitre.
   - ctxt: Chapitre B > "Maitriser dclog"

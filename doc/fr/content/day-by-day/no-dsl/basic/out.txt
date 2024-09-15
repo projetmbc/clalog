@@ -1,0 +1,18 @@
+﻿this::
+    date = 2024-09-15    ???
+
+
+abrev::
+    this_yaml = \examples/:this.name:.yaml
+
+
+===================================
+XXX
+===================================
+
+YY
+
+yaml::
+    ---
+    path = \this_yaml
+    ---

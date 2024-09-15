@@ -1,13 +1,12 @@
 ﻿this::
-    date = 2024-09-15 ??
-
+    date = 2024-09-15
 
 
 =================================
 Des répétitions utiles autorisées
 =================================
 
-YYY
+Le code suivant montre la possibilité d'utiliser le même type de bloc à différents moments. Ceci appraîtra dans le \cdt publiable de façon explicite. Ici, cela permet d'avoir une séquence portant sur un chapitre, puis se finissant sur un autre.
 
 yaml::
     ---
