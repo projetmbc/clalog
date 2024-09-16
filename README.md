@@ -1,7 +1,7 @@
-The `Python` module `dclog`
-===========================
+The `Python` module `clalog`
+============================
 
-About `dclog`
--------------
+About `clalog`
+--------------
 
-The name `dclog` comes from *"**D**aily **C**lass **LOG**"*: this project offers tools for efficiently writing a school class log day by day.
+The name `clalog` comes from *"**CLA**ss **LOG**"*: this project offers tools for efficiently writing a school class log day by day.

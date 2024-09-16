@@ -1,7 +1,7 @@
 general:
   desc   : This project offers tools for efficiently writing
            a daily class log.
-  acronym: "[D]aily [C]lass [LOG]"
+  acronym: "[CLA]ss [LOG]"
   author : Christophe, BAL
 
   licence: gnu 3
