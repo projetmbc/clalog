@@ -3,7 +3,6 @@ clalog - TODO
 ======
 
 
-
 // ---------- //
 
 liste exo dans dossier dédie avec les docs, un fichier par dossier, ficheir noméer maunal.autoref.yaml

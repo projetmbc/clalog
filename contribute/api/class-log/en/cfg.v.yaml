@@ -2,12 +2,18 @@
 # == GENERAL INFOS == #
 # =================== #
 
+###
+# TODO: tnsdoc
+###
 gene*:
 ###
-# Name of the author's insititute
+# TODO: tnsdoc
 ###
+# Name of the author's insititute
   institute*: str
 
+###
+# TODO: tnsdoc
 ###
 # NOTES.
 #     1) For the author, only the LAST NAME is mandatory.
@@ -17,7 +23,6 @@ gene*:
 # "First Name 1 ,
 #              Last Name
 #              [auth_email_1@provider.abc]"
-###
   author*: author
 
 
@@ -26,6 +31,8 @@ gene*:
 # =================== #
 
 ###
+# TODO: tnsdoc
+###
 # WARNING.
 #     Abbreviations can be defined as long as they do not conflict
 #     with DSL macro commands for textbook entry, or with abbreviated
@@ -33,7 +40,6 @@ gene*:
 #
 #   ABBREV_1: full text of the abbreviation nb.1
 #   ABBREV_2: we can use abbreviation "\ABBREV_1" in another one
-###
 abbrev*: dict(gene_id, str)
 
 
@@ -41,6 +47,8 @@ abbrev*: dict(gene_id, str)
 # == GROUPS == #
 # ============ #
 
+###
+# TODO: tnsdoc
 ###
 # WARNING.
 #     Short names of groups must not conflict with DSL macro commands
@@ -50,7 +58,6 @@ abbrev*: dict(gene_id, str)
 
 # #: if MAIN_GRP_NAME in group.keys() :#
 #   MAIN_GRP_NAME-SUBGRP: full name of the subgroup
-###
 group: dict(
          gene_id & not this.abbrev.key
          |
@@ -64,11 +71,12 @@ group: dict(
 # ============= #
 
 ###
+# TODO: tnsdoc
+###
 #: if MAIN_GRP_NAME in group.keys() :#
   # MAIN_GRP_NAME:
   #   - Title of the main, or single, manual used.
   #   - You can indicate several manuals for the same group.
-###
 manual*: dict(this.group.key, list(str))
 
 
@@ -77,11 +85,12 @@ manual*: dict(this.group.key, list(str))
 # =============== #
 
 ###
+# TODO: tnsdoc
+###
 # #: if MAIN_GRP_NAME in group.keys() :#
 #   MAIN_GRP_NAME: relative path to the folder containing the documents
 #                  referenced in the scholar textbook, the path being
 #                  relative to the folder containing this ''cgf.yaml''.
-###
 folder*: dict(this.group.key, path_dir)
 
 
@@ -90,6 +99,9 @@ folder*: dict(this.group.key, path_dir)
 # ============== #
 
 schedule*:
+###
+# TODO: tnsdoc
+###
 # NOTE: the use of ''[week {WEEK_ID}]'' is only for mandotatory use
 # cases regarding to the schedule.
 #
@@ -106,10 +118,16 @@ schedule*:
 # == PERIODS == #
 # ============= #
 
+###
+# TODO: tnsdoc
+###
 date:
   start: date_ymd
   end  : date_ymd
 
+###
+# TODO: tnsdoc
+###
 # There is no restriction on the number of special aletrantive weeks.
 # #: assert isdate(START_1ST_WEEK_ID_A, "{month}-{day}") :#
 # #: assert isdate(START_1ST_WEEK_ID_B, "{month}-{day}") :#
@@ -120,6 +138,9 @@ date:
 #     ID_B: START_1ST_WEEK_ID_B
   weeks*: dict(gene_id, date_md)
 
+###
+# TODO: tnsdoc
+###
 # There is no restriction on the number of holidays.
 # #: assert isdate(START_HOLIDAYS, "{month}-{day}") :#
 # #: assert isdate(END_HOLIDAYS  , "{month}-{day}") :#

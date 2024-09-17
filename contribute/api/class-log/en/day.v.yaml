@@ -1,0 +1,33 @@
+﻿# ============================= #
+# == ONE DAY, SEVERAL GROUPS == #
+# ============================= #
+
+###
+# TODO: tnsdoc
+###
+GRP_NAME |> in(\./cgf.v.yaml\.group.key):
+###
+# TODO: tnsdoc
+###
+# To indicate a context which is typically the chapter currently
+# covered. This can be either an explicit, or implicit, reference
+# to a LaTeX document, or just a textual description.
+  - ctxt*: timed_seq
+
+###
+# TODO: tnsdoc
+###
+# (optional duration like 1h or 45min) Reference to a LaTeX document or just a textual description.
+  - test*: timed_seq
+
+###
+# TODO: tnsdoc
+###
+# Information is given point by point, with the option of using a dedicated DSL to automate classic use cases and extract some important data.
+  - KIND* |> in("cor", "done", "out"): list(timed_seq)
+
+###
+# TODO: tnsdoc
+###
+# See the specifications for the ''cor'' KIND.
+  - todo*: dict(date_md | "next", list(timed_seq))
