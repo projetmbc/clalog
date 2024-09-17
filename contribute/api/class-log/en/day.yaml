@@ -1,23 +1,12 @@
-﻿###
-# note::
-#     1) Names followed by one star indicates an optional setting.
-#     2) Terminal values indicates constraints for values that must
-#        be respected and coded by the fina appliacation.
-#     3) For keys, constraints always follows the schema
-#        ''KEY_UPPER_NAME |> constraints''.
-#     4) Documentation is done using the \tnsdoc syntax.
-###
-
-
-# ============================= #
+﻿# ============================= #
 # == ONE DAY, SEVERAL GROUPS == #
 # ============================= #
 
 MAIN_GRP_NAME |> \./cgf.yaml\.group.key:
 ###
-# To indicate a context which is typically the chapter currently covered.
-# This can be either a reference to a LaTeX document or just a textual
-# description.
+# To indicate a context which is typically the chapter currently
+# covered. This can be either an explicit, or implicit, reference
+# to a LaTeX document, or just a textual description.
 ###
   - ctxt*: timed_seq
 

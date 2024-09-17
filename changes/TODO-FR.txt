@@ -6,6 +6,28 @@ clalog - TODO
 
 // ---------- //
 
+liste exo dans dossier dédie avec les docs, un fichier par dossier, ficheir noméer maunal.autoref.yaml
+
+- title   : HHH
+  ctx     : Chapitre XXX
+  minirefs:
+# page 8, mini exo = 1
+    8 : 1
+# page 9, mini exo = 10
+    9 : 10
+
+
+De ce fichier humainement constructible, on construit
+
+- title: HHH
+  ctx  : Chapitre XXX
+  page:
+    1  .. 9  : 8
+    10 .. +oo: 9
+
+
+// ---------- //
+
 il manque explication sur rangement par année/mois/jour.yaml !!!!
 
 

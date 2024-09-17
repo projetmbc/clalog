@@ -1,14 +1,3 @@
-###
-# note::
-#     1) Names followed by one star indicates an optional setting.
-#     2) Terminal values indicates constraints for values that must
-#        be respected and coded by the fina appliacation.
-#     3) For keys, constraints always follows the schema
-#        ''KEY_UPPER_NAME |>constraint_func''.
-#     4) Documentation is done using the \tnsdoc syntax.
-###
-
-
 # =================== #
 # == GENERAL INFOS == #
 # =================== #
