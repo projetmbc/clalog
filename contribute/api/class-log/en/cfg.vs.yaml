@@ -38,10 +38,7 @@ gene*:
 #   ABBREV_2: we can use abbreviation "\ABBREV_1" in another one
 abbrev*: >
   dict(
-    all(
-      gene_id,
-      not(in(this.group.key))
-    ),
+    all(gene_id, not(in(this.group.key))),
     str
   )
 
@@ -63,10 +60,7 @@ abbrev*: >
 #   MAIN_GRP_NAME-SUBGRP: full name of the subgroup
 group: >
   dict(
-    any(
-      gene_id,
-      subgroup
-    ),
+    any(gene_id, subgroup),
     str
   )
 
