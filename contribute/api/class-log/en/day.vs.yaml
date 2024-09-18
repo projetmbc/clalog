@@ -12,22 +12,44 @@ GRP_NAME |> in(\./cgf.vs.yaml\.group.key):
 # To indicate a context which is typically the chapter currently
 # covered. This can be either an explicit, or implicit, reference
 # to a LaTeX document, or just a textual description.
-  - ctxt*: timed_seq
+  - ctxt*: lazzy_ref
 
 ###
 # TODO: tnsdoc
 ###
 # (optional duration like 1h or 45min) Reference to a LaTeX document or just a textual description.
-  - test*: timed_seq
+  - test*: >
+      chain(
+        timed_seq,
+        lazzy_ref
+      )
 
 ###
 # TODO: tnsdoc
 ###
 # Information is given point by point, with the option of using a dedicated DSL to automate classic use cases and extract some important data.
-  - KIND* |> in("cor", "done", "out"): list(timed_seq)
+  - KIND* |> in("cor", "done", "out"): >
+      list(
+        chain(
+          timed_seq,
+          lazzy_ref
+        )
+      )
 
 ###
 # TODO: tnsdoc
 ###
 # See the specifications for the ''cor'' KIND.
-  - todo*: dict(date_md | "next", list(timed_seq))
+  - todo*: >
+      dict(
+        any(
+          date_md,
+          in("next")
+        ),
+        list(
+          chain(
+            timed_seq,
+            lazzy_ref
+          )
+        )
+      )

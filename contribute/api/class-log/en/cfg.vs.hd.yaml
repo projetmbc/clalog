@@ -14,14 +14,19 @@ author: >
     + Key "email" is for the email.
 
 
-gene_id: >
+timed_seq: \./day.vs.hd.yaml\
+
+
+subgroup: >
   Validated data: ...
 
-  Returned value: the initial string as it may be used in a chaining
-  rule, for example.
+  Returned value: ...
 
 
-timed_seq: \./day.vs.yaml\
+day_name: >
+  Validated data: ...
+
+  Returned value: ...
 
 
 date_md_range: >

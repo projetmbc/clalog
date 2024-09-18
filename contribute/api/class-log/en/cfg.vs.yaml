@@ -36,10 +36,14 @@ gene*:
 #
 #   ABBREV_1: full text of the abbreviation nb.1
 #   ABBREV_2: we can use abbreviation "\ABBREV_1" in another one
-abbrev*: dict(
-           gene_id,
-           str
-         )
+abbrev*: >
+  dict(
+    all(
+      gene_id,
+      not(in(this.group.key))
+    ),
+    str
+  )
 
 
 # ============ #
@@ -57,16 +61,14 @@ abbrev*: dict(
 
 # #: if MAIN_GRP_NAME in group.keys() :#
 #   MAIN_GRP_NAME-SUBGRP: full name of the subgroup
-group: dict(
-         any(
-           all(
-             gene_id,
-             not(in(this.abbrev.key))
-           ),
-           subgroup
-         ),
-         str
-       )
+group: >
+  dict(
+    any(
+      gene_id,
+      subgroup
+    ),
+    str
+  )
 
 
 # ============= #
@@ -80,10 +82,11 @@ group: dict(
   # MAIN_GRP_NAME:
   #   - Title of the main, or single, manual used.
   #   - You can indicate several manuals for the same group.
-manual*: dict(
-           in(this.group.key),
-           list(str)
-         )
+manual*: >
+  dict(
+    in(this.group.key),
+    list(str)
+  )
 
 
 # =============== #
@@ -97,10 +100,11 @@ manual*: dict(
 #   MAIN_GRP_NAME: relative path to the folder containing the documents
 #                  referenced in the scholar textbook, the path being
 #                  relative to the folder containing this ''cgf.yaml''.
-folder*: dict(
-           in(this.group.key),
-           path_dir
-         )
+folder*: >
+  dict(
+    in(this.group.key),
+    path_dir
+  )
 
 
 # ============== #
@@ -120,10 +124,11 @@ schedule*:
 # #
 # #: assert WEEK_ID in dates.weeks.keys() :#
 #     "{START_TIME}  .. {END_TIME} [week {WEEK_ID}]": SNT
-  DAY |> day_name: dict(
-                     time_week_range,
-                     in(this.group.key)
-                   )
+  DAY |> day_name: >
+    dict(
+      time_week_range,
+      in(this.group.key)
+    )
 
 
 # ============= #
@@ -148,10 +153,11 @@ date:
 # #: assert isid(ID_B) :#
 #     ID_A: START_1ST_WEEK_ID_A
 #     ID_B: START_1ST_WEEK_ID_B
-  weeks*: dict(
-            gene_id,
-            date_md
-          )
+  weeks*: >
+    dict(
+      gene_id,
+      date_md
+    )
 
 ###
 # TODO: tnsdoc
@@ -160,7 +166,8 @@ date:
 # #: assert isdate(START_HOLIDAYS, "{month}-{day}") :#
 # #: assert isdate(END_HOLIDAYS  , "{month}-{day}") :#
 #     "Full name of the holidays": START_HOLIDAYS .. END_HOLIDAYS
-  holidays*: dict(
-               str,
-               date_md_range
-             )
+  holidays*: >
+    dict(
+      str,
+      date_md_range
+    )
