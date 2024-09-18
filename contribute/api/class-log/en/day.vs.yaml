@@ -5,7 +5,7 @@
 ###
 # TODO: tnsdoc
 ###
-GRP_NAME |> in(\./cgf.v.yaml\.group.key):
+GRP_NAME |> in(\./cgf.vs.yaml\.group.key):
 ###
 # TODO: tnsdoc
 ###

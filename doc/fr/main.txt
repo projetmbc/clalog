@@ -18,5 +18,5 @@ abrev::
 
 content::
     \content/intro.txt
-    \content/config.txt
+    \content/config.txt  ???? manque pour schedule l'ajout de semaine a ou b via "13h55 .. 14h50 [week B]"
     \content/day-by-day.txt         ??

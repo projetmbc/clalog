@@ -1,0 +1,48 @@
+author: >
+  Validated data.
+
+    + "Name 1, Name 2, Last Name [auth_email_1@provider.abc]"
+    + "Name , Last Name [auth_email_1@provider.abc]"
+    + "Last Name [auth_email_1@provider.abc]"
+    + "Name , Last Name"
+    + "Last Name"
+
+  Returned value: a key-val structure with the following signature.
+
+    + Key "names" is for the list of names.
+    + Key "last-name" is for the last names.
+    + Key "email" is for the email.
+
+
+gene_id: >
+  Validated data: ...
+
+  Returned value: the initial string as it may be used in a chaining
+  rule, for example.
+
+
+timed_seq: \./day.vs.yaml\
+
+
+date_md_range: >
+  Validated data: ...
+
+  Returned value: ...
+
+
+date_md: >
+  Validated data: ...
+
+  Returned value: ...
+
+
+date_ymd: >
+  Validated data: ...
+
+  Returned value: ...
+
+
+time_week_range: >
+  Validated data: ...
+
+  Returned value: ...
