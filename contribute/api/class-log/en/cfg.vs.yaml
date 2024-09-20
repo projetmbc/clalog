@@ -1,19 +1,12 @@
-# =================== #
-# == GENERAL INFOS == #
-# =================== #
-
-###
-# TODO: tnsdoc
+### ??
 ###
 gene*:
-###
-# TODO: tnsdoc
+### ??
 ###
 # Name of the author's insititute
   institute*: str
 
-###
-# TODO: tnsdoc
+### ??
 ###
 # NOTES.
 #     1) For the author, only the LAST NAME is mandatory.
@@ -22,12 +15,7 @@ gene*:
   author*: author
 
 
-# =================== #
-# == ABBREVIATIONS == #
-# =================== #
-
-###
-# TODO: tnsdoc
+### ??
 ###
 # WARNING.
 #     Abbreviations can be defined as long as they do not conflict
@@ -43,12 +31,7 @@ abbrev*: >
   )
 
 
-# ============ #
-# == GROUPS == #
-# ============ #
-
-###
-# TODO: tnsdoc
+### ??
 ###
 # WARNING.
 #     Short names of groups must not conflict with DSL macro commands
@@ -65,12 +48,7 @@ group: >
   )
 
 
-# ============= #
-# == MANUALS == #
-# ============= #
-
-###
-# TODO: tnsdoc
+### ??
 ###
 #: if MAIN_GRP_NAME in group.keys() :#
   # MAIN_GRP_NAME:
@@ -83,12 +61,7 @@ manual*: >
   )
 
 
-# =============== #
-# == DOCUMENTS == #
-# =============== #
-
-###
-# TODO: tnsdoc
+### ??
 ###
 # #: if MAIN_GRP_NAME in group.keys() :#
 #   MAIN_GRP_NAME: relative path to the folder containing the documents
@@ -102,12 +75,10 @@ folder*: >
 
 
 # ============== #
-# == SCHEDULE == #
-# ============== #
-
-schedule*:
+### ??
 ###
-# TODO: tnsdoc
+schedule*:
+### ??
 ###
 # NOTE: the use of ''[week {WEEK_ID}]'' is only for mandotatory use
 # cases regarding to the schedule.
@@ -125,19 +96,13 @@ schedule*:
     )
 
 
-# ============= #
-# == PERIODS == #
-# ============= #
-
-###
-# TODO: tnsdoc
+### ??
 ###
 date:
   start: date_ymd
   end  : date_ymd
 
-###
-# TODO: tnsdoc
+### ??
 ###
 # There is no restriction on the number of special aletrantive weeks.
 # #: assert isdate(START_1ST_WEEK_ID_A, "{month}-{day}") :#
@@ -153,8 +118,7 @@ date:
       date_md
     )
 
-###
-# TODO: tnsdoc
+### ??
 ###
 # There is no restriction on the number of holidays.
 # #: assert isdate(START_HOLIDAYS, "{month}-{day}") :#

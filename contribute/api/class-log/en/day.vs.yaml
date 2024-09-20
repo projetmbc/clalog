@@ -1,37 +1,33 @@
 ﻿###
-# =======================
-# ONE DAY, SEVERAL GROUPS
-# =======================
-#
-# The information is written to a file for one day. To do this, use the short group names defined in the cfg.yaml file.
+# note::
+#     The \info is written using one file per day: the current \specs
+#     concern this daily file.
+###
+
+
+### ??
+# First, short \grp names that was defined in the path::''cfg.yaml'' file.
 ###
 GRP_NAME |> in(\./cgf.vs.yaml\.group.key):
 
 
-###
-# -------------------
-# PEDAGOGICAL CONTEXT
-# -------------------
+### ??
+# A \ctxt is typically a \chap being learned. Technically, a \ctxt can
+# be one of the following types of \info. ?????
 #
-# A context is typically a chapter being learned. Technically, a context can be one of the following types.
-#
-#     1) An explicit or implicit reference to a LaTeX document via a file or folder path.
+#     1) An explicit or implicit \ref to a \latex \docu via a file or folder path.
 #
 #          + Explicit \ref: "./Chap-A/lesson/lesson.tex"
 #
 #          + Implicit \ref when working with a lesson: "./Chap-A"
 #
-#     1) A simple textual description.
+#     1) A simple textual \desc.
 ###
-  - ctxt*: lazzy_ref
+  - ctxt*: auto_ref
 
 
-###
-# --------
-# ONE TEST
-# --------
-#
-# A test can be indicated with or without a duration, and using either a reference or a textual description. Here are some possible uses.
+### ??
+# A test can be indicated with or without a duration, and using either a \ref or a textual \desc. Here are some possible use cases.   ?????
 #
 #    + “(1h30min) Common test"
 #
@@ -41,34 +37,25 @@ GRP_NAME |> in(\./cgf.vs.yaml\.group.key):
 #
 #    + “./common-test/2024/math.tex”
 ###
-  - test*: chain(timed_seq, lazzy_ref)
+  - test*: chain(timed_seq, auto_ref)
 
 
-### TODO: tnsdoc
-# ----------------------------------------
-# XXX
-# ----------------------------------------
-#
+### ??
 ###
 # Information is given point by point, with the option of using a dedicated DSL to automate classic use cases and extract some important data.
   - KIND* |> in("cor", "done", "out"): >
       list(
-        chain(timed_seq, lazzy_ref)
+        chain(timed_seq, auto_ref)
       )
 
 
-###
-# TODO: tnsdoc
-# ----------------------------------------
-# XXX
-# ----------------------------------------
-#
+### ??
 ###
 # See the specifications for the ''cor'' KIND.
   - todo*: >
       dict(
         any(date_md, in("next")),
         list(
-          chain(timed_seq, lazzy_ref)
+          chain(timed_seq, auto_ref)
         )
       )
