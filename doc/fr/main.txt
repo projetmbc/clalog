@@ -9,7 +9,7 @@
     lexic   = python
 
 
-abrev::
+abbrev::
     thisproj = cf::''dclog ;
                      https://github.com/projetmbc/dclog.git''
 

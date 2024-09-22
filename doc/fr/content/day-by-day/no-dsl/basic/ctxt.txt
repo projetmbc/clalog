@@ -2,7 +2,7 @@
     date = 2024-09-15    ???
 
 
-abrev::
+abbrev::
     this_yaml = \examples/:this.name:.yaml
 
 

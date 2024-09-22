@@ -2,7 +2,7 @@
     date = 2024-09-15
 
 
-abrev::
+abbrev::
     content = :this.name:
     dsl_exa = \day_exas/:this.name:
 

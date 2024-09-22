@@ -1,4 +1,8 @@
-﻿auto_ref: >
+﻿\abbrev:
+  \timed_refs: chain(timed_seq, auto_refs(input.txt))
+
+
+auto_refs: >
   \accept: ...
 
   \return: ...
@@ -8,3 +12,5 @@ timed_seq: >
   \accept: ...
 
   \return: ...
+
+  {"time": ..., "txt": ...}

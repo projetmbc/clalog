@@ -1,21 +1,37 @@
 ﻿###
 # note::
 #     The \info is written using one file per day: the current \specs
-#     concern this daily file.
+#     concern this daily files.
 ###
 
 
-### ??
-# First, short \grp names that was defined in the path::''cfg.yaml'' file.
 ###
-GRP_NAME |> in(\./cgf.vs.yaml\.group.key):
-
-
-### ??
-# A \ctxt is typically a \chap being learned. Technically, a \ctxt can
-# be one of the following types of \info. ?????
+# Each \pedago \seq is attached to one group indicated by its short
+# \grp names.
 #
-#     1) An explicit or implicit \ref to a \latex \docu via a file or folder path.
+# warning::
+#     Each \grp name must exist in the path::''cfg.yaml'' file.
+###
+GRP_NAME | in(\./cgf.vs.yaml\.group.keys):
+
+
+### ??
+# A \ctxt can be indicated to explain, for example, that a new \chap
+# has started. Technically, a \ctxt can be a text using optional auto
+# \refs. Here are some examples of use.
+#
+#     1) XXXX
+#
+#     1) XXXX
+#
+#     1) XXXX
+#
+#     1) XXXX
+#
+#     1) XXXX
+#
+#
+# An explicit or implicit \ref to a \latex \docu via a file or folder path.
 #
 #          + Explicit \ref: "./Chap-A/lesson/lesson.tex"
 #
@@ -23,7 +39,7 @@ GRP_NAME |> in(\./cgf.vs.yaml\.group.key):
 #
 #     1) A simple textual \desc.
 ###
-  - ctxt*: auto_ref
+  - ctxt*: auto_refs
 
 
 ### ??
@@ -37,16 +53,14 @@ GRP_NAME |> in(\./cgf.vs.yaml\.group.key):
 #
 #    + “./common-test/2024/math.tex”
 ###
-  - test*: chain(timed_seq, auto_ref)
+  - test*: \timed_refs
 
 
 ### ??
 ###
 # Information is given point by point, with the option of using a dedicated DSL to automate classic use cases and extract some important data.
-  - KIND* |> in("cor", "done", "out"): >
-      list(
-        chain(timed_seq, auto_ref)
-      )
+  - KIND* | in("cor", "done", "out"): >
+      list(\timed_refs)
 
 
 ### ??
@@ -55,7 +69,5 @@ GRP_NAME |> in(\./cgf.vs.yaml\.group.key):
   - todo*: >
       dict(
         any(date_md, in("next")),
-        list(
-          chain(timed_seq, auto_ref)
-        )
+        list(\timed_refs)
       )

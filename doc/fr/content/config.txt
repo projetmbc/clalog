@@ -1,4 +1,4 @@
-﻿abrev::
+﻿abbrev::
     content  = :this.name:
     cfg_exas = ?/examples/:this.name:
 

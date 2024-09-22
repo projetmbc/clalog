@@ -1,4 +1,10 @@
 ### ??
+# note::
+#     XXXX
+###
+
+
+### ??
 ###
 gene*:
 ### ??
@@ -26,7 +32,7 @@ gene*:
 #   ABBREV_2: we can use abbreviation "\ABBREV_1" in another one
 abbrev*: >
   dict(
-    all(gene_id, not(in(this.group.key))),
+    all(gene_id, not(in(this.group.keys))),
     str
   )
 
@@ -56,7 +62,7 @@ group: >
   #   - You can indicate several manuals for the same group.
 manual*: >
   dict(
-    in(this.group.key),
+    in(this.group.keys),
     list(str)
   )
 
@@ -69,7 +75,7 @@ manual*: >
 #                  relative to the folder containing this ''cgf.yaml''.
 folder*: >
   dict(
-    in(this.group.key),
+    in(this.group.keys),
     path_dir
   )
 
@@ -89,10 +95,10 @@ schedule*:
 # #
 # #: assert WEEK_ID in dates.weeks.keys() :#
 #     "{START_TIME}  .. {END_TIME} [week {WEEK_ID}]": SNT
-  DAY |> day_name: >
+  DAY | day_name: >
     dict(
       time_week_range,
-      in(this.group.key)
+      in(this.group.keys)
     )
 
 
