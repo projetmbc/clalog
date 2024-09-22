@@ -4,6 +4,10 @@
 ###
 
 
+# ------------- #
+# -- ABBREVS -- #
+# ------------- #
+
 \abbrev:
   timed_refs: chain(timed_seq, auto_refs(input.txt))
 
@@ -14,6 +18,10 @@
       date,
     )
 
+
+# ------------------------- #
+# -- SPECIFIC VALIDATORS -- #
+# ------------------------- #
 
 auto_refs: >
   \accept: ...

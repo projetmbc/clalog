@@ -3,6 +3,11 @@
 #     date = 2024-09-22 ???
 ###
 
+
+# ------------- #
+# -- ABBREVS -- #
+# ------------- #
+
 \abbrev:
   date_md   : or(date("M-D"), date)
   date_range: chain(range, map(date_md, input))
@@ -15,17 +20,21 @@
     )
 
 
-versatile_day_name: >
-  or(
-    date("D_n"),
-    date("D_sn"),
-  )
-
+# ------------------------- #
+# -- SPECIFIC VALIDATORS -- #
+# ------------------------- #
 
 subgroup_id: >
   \accept: ...
 
   \return: ...
+
+
+versatile_day_name: >
+  or(
+    date("D_n"),
+    date("D_sn"),
+  )
 
 
 week_seq: >
