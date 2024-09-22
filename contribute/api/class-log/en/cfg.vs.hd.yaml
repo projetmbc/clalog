@@ -3,13 +3,6 @@
 #     date = 2024-09-22 ???
 ###
 
-\timed_seq: >
-  \from: \./day.vs.hd.yaml\
-
-\versatile_date: >
-  \from: \./day.vs.hd.yaml\
-
-
 \abbrev:
   date_md   : or(date("M-D"), date)
   date_range: chain(range, map(date_md, input))
