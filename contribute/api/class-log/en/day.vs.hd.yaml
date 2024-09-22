@@ -1,15 +1,46 @@
-﻿\abbrev:
-  \timed_refs: chain(timed_seq, auto_refs(input.txt))
+﻿### ??
+# this::
+#     date = 2024-09-22 ???
+###
+
+
+\abbrev:
+  timed_refs: chain(timed_seq, auto_refs(input.txt))
+
+  versatile_date: >
+    or(
+      date("D"),
+      date("M-D"),
+      date,
+    )
 
 
 auto_refs: >
   \accept: ...
 
+      1) explicit relative path
+
+      1) inmplict relative path
+
+      1) text with optional \refs
+
+          + XXX
+
+          + XXX
+
+          + XXX
+
   \return: ...
 
 
 timed_seq: >
-  \accept: ...
+  \accept: ... usage the ''time'' proposé par défaut
+
+      1) 1h
+
+      1) 1h30min
+
+      1) 15min
 
   \return: ...
 

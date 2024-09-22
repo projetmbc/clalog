@@ -25,7 +25,7 @@ FULL_FILE = CONTENT_DIR / f"{FULL_TAG}.yaml"
 # ----------- #
 
 def extract_single_kv(onedict):
-    assert len(onedict.keys()) == 1
+    assert len(onedict:keys()) == 1
 
     for k, v in onedict.items():
         return (k, v)

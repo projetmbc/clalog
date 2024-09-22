@@ -1,6 +1,6 @@
-﻿### ??
+﻿###
 # this::
-#     date = 2024-09-22 ???
+#     date = 2024-09-22
 #
 #
 # note::
@@ -14,9 +14,9 @@
 # \grp names.
 #
 # warning::
-#     Each \grp name must exist in the path::''cfg.yaml'' file.
+#     Each short \grp name must exist in the path::''cfg.yaml'' file.
 ###
-GRP_NAME | in(\./cgf.vs.yaml\.group.keys):
+SHORT_GRP_NAME | in(\./cgf.vs.yaml\.group:keys):
 ###
 # note::
 #     Each content of a \grp uses lists suchas to allow to respect
@@ -28,14 +28,14 @@ GRP_NAME | in(\./cgf.vs.yaml\.group.keys):
 # has started. Technically, a \ctxt can be a text using optional auto
 # \refs. Here are some examples of use.
 #
-#     1) Explicit \ref: ''./Chap-A/lesson/lesson.tex''. The path is
+#     1) Explicit path: ''./Chap-A/lesson/lesson.tex''. The path is
 #     relative to the folder associated to the \grp in the
 #     path::''cfg.yaml'' file.
 #
-#     1) Implicit \ref: ''./Chap-A''. This implies to follow the \dir
+#     1) Implicit path: ''./Chap-A''. This implies to follow the \dir
 #     \orga imposed by \thisproj.
 #
-#     1) One text: ''Chapter A: Start to learn LaTeX''.
+#     1) Text without any \ref: ''Chapter A: Start to learn LaTeX''.
 #
 #     1) Text using \refs: ''Informatic - pw4p25''. Here \this proj
 #     will produce "Informatic - Practical work 4 page 25".
@@ -48,38 +48,63 @@ GRP_NAME | in(\./cgf.vs.yaml\.group.keys):
 # ones allow fo the \ctxts (see above). You can also give the duration.
 # Here are some examples of use.
 #
-#     1) Explicit \ref: ''(1h30min) ./common-test/2024/math.tex''. Like
-#     for lessons, the path is relative to the folder associated to the
-#     \grp in the path::''cfg.yaml'' file.
+#     1) Explicit path: ''(1h30min) ./common-test/2024/math.tex'' is
+#     for a test with a duration of time(txt)::"1h30min". Like for
+#     lessons, the path is relative to the folder associated to the \grp
+#     in the path::''cfg.yaml'' file.
 #
-#     1) Implicit \ref: ''(1h30min) ./common-test/2024''. This implies
+#     1) Implicit path: ''(1h30min) ./common-test/2024''. This implies
 #     to follow the \dir \orga imposed by \thisproj.
 #
-#     1) One text: ''(1h30min) Common test''. This is for a test named
-#     "Common test" with a duration of time(txt)::"1h30min".
+#     1) Text without any \ref: ''(1h30min) Common test''. This is for
+#     a test named "Common test".
 #
-#     1) Text using \refs: ''(10min) Short test - ex6p66 and also ex9p99''.
+#     1) Text using \refs: ''(10min) Short test - ex6p66 and ex9p99''.
 #     Here \this proj will produce "Short test - Exercice 6 page 66 and
-#     also Exercice 9 page 99".
+#     exercice 9 page 99 [Duration: 10 min]".
 #
-#     1) No duration: just omit ''1h30min'' as in ''./common-test/2024''
+#     1) No duration: just omit ''(1h30min)'' as in ''./common-test/2024''
 #     and ''Common test'' for example.
 ###
   - test*: \timed_refs
 
 
-### ??
 ###
-# Information is given point by point, with the option of using a dedicated DSL to automate classic use cases and extract some important data.
+# The main content of a daily class log is devoted to the following
+# categories, each fed by a list of optionally timed \seqs, and possibly
+# with \refs as for tests and \ctxts.
+#
+#    1) ''cor'': this is the \cors made during the course.
+#
+#    1) ''done'': this is the work done during the course.
+#
+#    1) ''out'': sometimes the course takes place outside (think of
+#    a visit to a museum, for example).
+###
   - KIND* | in("cor", "done", "out"): >
       list(\timed_refs)
 
 
-### ??
 ###
-# See the specifications for the ''cor'' KIND.
+# To indicate the work to be done at home, a ''key-val'' \dict must be
+# used. The \vals use a similar lists to the ones allowed for the ''cor'',
+# 'done'', ... blocks. The keys must be of the following kinds.
+#
+#    1) ''next'': this is for the next \seq associated to the actual \grp.
+#
+#    1) ''09'' with an optional leading zero: this for the next day with
+#    number ''09'' (\thisproj is smart enough to guess the good month and
+#    year of the expected day).
+#
+#    1) ''04-09'' with optional leading zeroes: this for the next day with
+#    number ''09'' for the month ''04'' (\thisproj is smart enough to
+#    guess the good year of the expected day).
+#
+#    1) ''2024-04-09'' with optional leading zeroes: only anxious users
+#    who need to write everything down.
+###
   - todo*: >
       dict(
-        any(or(date_d, date_md, date_ymd), in("next")),
+        any(in("next"), \versatile_date),
         list(\timed_refs)
       )

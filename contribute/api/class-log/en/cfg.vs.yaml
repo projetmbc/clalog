@@ -1,5 +1,5 @@
 ### ??
-# this::
+# \this.::
 #     date = 2024-09-22 ???
 #
 #
@@ -8,13 +8,19 @@
 ###
 
 
-### ??
-###
 gene*:
 ### ??
 ###
 # Name of the author's insititute
-  institute*: str
+# NOTES.
+#     1) For institutes, only the NAME is mandatory.
+#     2) Several MAILS can be used.
+#     3) Using comas, several MAILS can be given.
+  institute* | not(exist(\this.gene.institutes)): >
+    institute
+
+  institutes* | not(exist(\this.gene.institute)): >
+    list(institute)
 
 ### ??
 ###
@@ -22,7 +28,11 @@ gene*:
 #     1) For the author, only the LAST NAME is mandatory.
 #     2) Several FIRST NAMES can be indicated.
 #     3) Several MAILS separated by comas can be used.
-  author*: author
+  author* | not(exist(\this.gene.authors)): >
+    author
+
+  authors* | not(exist(\this.gene.author)): >
+    list(author)
 
 
 ### ??
@@ -36,7 +46,7 @@ gene*:
 #   ABBREV_2: we can use abbreviation "\ABBREV_1" in another one
 abbrev*: >
   dict(
-    all(gene_id, not(in(this.group.keys))),
+    all(gene_id, not(in(\this.group:keys))),
     str
   )
 
@@ -49,38 +59,38 @@ abbrev*: >
 
 #   MAIN_GRP_NAME: full name of the group
 
-# #: if MAIN_GRP_NAME in group.keys() :#
+# #: if MAIN_GRP_NAME in group:keys() :#
 #   MAIN_GRP_NAME-SUBGRP: full name of the subgroup
 group: >
   dict(
-    any(gene_id, subgroup),
+    any(gene_id, subgroup_id),
     str
   )
 
 
 ### ??
 ###
-#: if MAIN_GRP_NAME in group.keys() :#
+#: if MAIN_GRP_NAME in group:keys() :#
   # MAIN_GRP_NAME:
   #   - Title of the main, or single, manual used.
   #   - You can indicate several manuals for the same group.
 manual*: >
   dict(
-    in(this.group.keys),
+    in(\this.group:keys),
     list(str)
   )
 
 
 ### ??
 ###
-# #: if MAIN_GRP_NAME in group.keys() :#
+# #: if MAIN_GRP_NAME in group:keys() :#
 #   MAIN_GRP_NAME: relative path to the folder containing the documents
 #                  referenced in the scholar textbook, the path being
-#                  relative to the folder containing this ''cgf.yaml''.
+#                  relative to the folder containing \this. ''cgf.yaml''.
 folder*: >
   dict(
-    in(this.group.keys),
-    path_dir
+    in(\this.group:keys),
+    list(path("is_dir"))
   )
 
 
@@ -97,20 +107,20 @@ schedule*:
 # #: assert isdate(START_TIME, "{hour}h{min}") or isdate(START_TIME, "{hour}h"]) :#
 # #: assert isdate(END_TIME, "{hour}h{min}") or isdate(END_TIME, "{hour}h"]) :#
 # #
-# #: assert WEEK_ID in dates.weeks.keys() :#
+# #: assert WEEK_ID in dates.weeks:keys() :#
 #     "{START_TIME}  .. {END_TIME} [week {WEEK_ID}]": SNT
-  DAY | day_name: >
+  DAY | \versatile_day_name: >
     dict(
-      time_week_range,
-      in(this.group.keys)
+      \time_range_week,
+      in(\this.group:keys)
     )
 
 
 ### ??
 ###
 date:
-  start: date_ymd
-  end  : date_ymd
+  TIME_POINT | in("start", "end"): >
+    date
 
 ### ??
 ###
@@ -125,7 +135,7 @@ date:
   weeks*: >
     dict(
       gene_id,
-      date_md
+      \date_md
     )
 
 ### ??
@@ -137,5 +147,5 @@ date:
   holidays*: >
     dict(
       str,
-      date_md_range
+      \date_range
     )

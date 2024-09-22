@@ -1,38 +1,49 @@
-timed_seq: >
+### ??
+# this::
+#     date = 2024-09-22 ???
+###
+
+\timed_seq: >
+  \from: \./day.vs.hd.yaml\
+
+\versatile_date: >
   \from: \./day.vs.hd.yaml\
 
 
-subgroup: >
+\abbrev:
+  date_md   : or(date("M-D"), date)
+  date_range: chain(range, map(date_md, input))
+
+  time_range_week: >
+    chain(
+      week_seq,
+      range(input.txt),
+      map(time, input)
+    )
+
+
+versatile_day_name: >
+  or(
+    date("D_n"),
+    date("D_sn"),
+  )
+
+
+subgroup_id: >
   \accept: ...
 
   \return: ...
 
 
-day_name: >
+week_seq: >
   \accept: ...
+
+      1) 1h
+
+      1) 1h30min
+
+      1) 15min
 
   \return: ...
 
-
-date_md_range: >
-  \accept: ...
-
-  \return: ...
-
-
-date_md: >
-  \accept: ...
-
-  \return: ...
-
-
-date_ymd: >
-  \accept: ...
-
-  \return: ...
-
-
-time_week_range: >
-  \accept: ...
-
-  \return: ...
+  {"week": ..., "txt": ...}
