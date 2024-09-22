@@ -1,4 +1,8 @@
-﻿###
+﻿### ??
+# this::
+#     date = 2024-09-22 ???
+#
+#
 # note::
 #     The \info is written using one file per day: the current \specs
 #     concern this daily files.
@@ -13,45 +17,53 @@
 #     Each \grp name must exist in the path::''cfg.yaml'' file.
 ###
 GRP_NAME | in(\./cgf.vs.yaml\.group.keys):
+###
+# note::
+#     Each content of a \grp uses lists suchas to allow to respect
+#     the actual order of events in the course.
+###
 
-
-### ??
+###
 # A \ctxt can be indicated to explain, for example, that a new \chap
 # has started. Technically, a \ctxt can be a text using optional auto
 # \refs. Here are some examples of use.
 #
-#     1) XXXX
+#     1) Explicit \ref: ''./Chap-A/lesson/lesson.tex''. The path is
+#     relative to the folder associated to the \grp in the
+#     path::''cfg.yaml'' file.
 #
-#     1) XXXX
+#     1) Implicit \ref: ''./Chap-A''. This implies to follow the \dir
+#     \orga imposed by \thisproj.
 #
-#     1) XXXX
+#     1) One text: ''Chapter A: Start to learn LaTeX''.
 #
-#     1) XXXX
-#
-#     1) XXXX
-#
-#
-# An explicit or implicit \ref to a \latex \docu via a file or folder path.
-#
-#          + Explicit \ref: "./Chap-A/lesson/lesson.tex"
-#
-#          + Implicit \ref when working with a lesson: "./Chap-A"
-#
-#     1) A simple textual \desc.
+#     1) Text using \refs: ''Informatic - pw4p25''. Here \this proj
+#     will produce "Informatic - Practical work 4 page 25".
 ###
   - ctxt*: auto_refs
 
 
-### ??
-# A test can be indicated with or without a duration, and using either a \ref or a textual \desc. Here are some possible use cases.   ?????
+###
+# A test, or assignment, is indicated via one \desc similar to the
+# ones allow fo the \ctxts (see above). You can also give the duration.
+# Here are some examples of use.
 #
-#    + “(1h30min) Common test"
+#     1) Explicit \ref: ''(1h30min) ./common-test/2024/math.tex''. Like
+#     for lessons, the path is relative to the folder associated to the
+#     \grp in the path::''cfg.yaml'' file.
 #
-#    + “(1h30min) ./common-test/2024”
+#     1) Implicit \ref: ''(1h30min) ./common-test/2024''. This implies
+#     to follow the \dir \orga imposed by \thisproj.
 #
-#    + “Common test"
+#     1) One text: ''(1h30min) Common test''. This is for a test named
+#     "Common test" with a duration of time(txt)::"1h30min".
 #
-#    + “./common-test/2024/math.tex”
+#     1) Text using \refs: ''(10min) Short test - ex6p66 and also ex9p99''.
+#     Here \this proj will produce "Short test - Exercice 6 page 66 and
+#     also Exercice 9 page 99".
+#
+#     1) No duration: just omit ''1h30min'' as in ''./common-test/2024''
+#     and ''Common test'' for example.
 ###
   - test*: \timed_refs
 
@@ -68,6 +80,6 @@ GRP_NAME | in(\./cgf.vs.yaml\.group.keys):
 # See the specifications for the ''cor'' KIND.
   - todo*: >
       dict(
-        any(date_md, in("next")),
+        any(or(date_d, date_md, date_ymd), in("next")),
         list(\timed_refs)
       )

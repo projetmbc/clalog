@@ -1,5 +1,5 @@
 ﻿this::
-    title  = Rédiger un cahier de texte scolaire
+    title  = Rédiger efficacement des cahiers de texte scolaire
     author = Christophe, BAL [projetmbc@gmail.com]
     lang   = fr
 
@@ -10,8 +10,8 @@
 
 
 abbrev::
-    thisproj = cf::''dclog ;
-                     https://github.com/projetmbc/dclog.git''
+    thisproj = cf::''clalog ;
+                     https://github.com/projetmbc/clalog.git''
 
     content = content
 
